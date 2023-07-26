@@ -1,7 +1,7 @@
 # Личный проект «Кэт энерджи»
 
 * Студент: [Георгий Цабиев](https://up.htmlacademy.ru/adaptive/29/user/2277251).
-* Наставник: [Виктор Рыбаков](https://htmlacademy.ru/profile/viktor-rybakov).
+* Наставник : [Виктор Рыбаков](https://htmlacademy.ru/profile/id1012537).
 
 ---
 
