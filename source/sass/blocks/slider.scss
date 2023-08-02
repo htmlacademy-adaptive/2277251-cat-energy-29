@@ -1,0 +1,40 @@
+.slider {
+  background-color: #eaeaea;
+}
+
+.slider__text {
+  color: #444444;
+  font-family: "Lato", sans-serif;
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 18px;
+}
+
+.slider__value {
+  color: #000000;
+  text-align: center;
+  font-family: "Oswald", sans-serif;
+  font-size: 24px;
+  font-weight: 400;
+  line-height: 24px;
+}
+
+.slider__description {
+  color: #444444;
+  text-align: center;
+  font-family: "Lato", sans-serif;
+  font-size: 12px;
+  font-weight: 400;
+  line-height: 12px;
+}
+
+.slider__expenses {
+  color: #000000;
+  text-align: center;
+  font-family: "Oswald", sans-serif;
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 20px;
+  text-transform: uppercase;
+}
