@@ -4,7 +4,7 @@
 @use "./blocks/button.scss";
 @use "./blocks/logo-main.scss";
 @use "./blocks/main-nav.scss";
-@use "./visually-hidden.scss";
+@use "./global/visually-hidden.scss";
 @use "./blocks/site-list.scss";
 @use "./blocks/main-container.scss";
 @use "./blocks/hero.scss";
@@ -26,4 +26,5 @@
 @use "./blocks/comment-field.scss";
 @use "./blocks/checkbox-list.scss";
 @use "./blocks/catalog.scss";
+@use "./blocks/catalog-show-all.scss";
 @use "./blocks/gift.scss";
