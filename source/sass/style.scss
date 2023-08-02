@@ -1,5 +1,6 @@
 // Начните писать стили здесь
 @use "./global/global.scss";
+@use "./global/reset-list.scss";
 @use "./blocks/page.scss";
 @use "./blocks/main-header.scss";
 @use "./blocks/button.scss";
