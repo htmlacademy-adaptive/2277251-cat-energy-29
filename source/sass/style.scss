@@ -1,16 +1,17 @@
 // Начните писать стили здесь
-@use "./global/global.scss";
-@use "./global/reset-list.scss";
+@use "./common/global.scss";
+@use "./common/variables.scss";
+@use "./common/reset-list.scss";
 @use "./blocks/page.scss";
 @use "./blocks/main-header.scss";
 @use "./blocks/button.scss";
 @use "./blocks/logo-main.scss";
 @use "./blocks/main-nav.scss";
-@use "./global/visually-hidden.scss";
+@use "./common/visually-hidden.scss";
 @use "./blocks/site-list.scss";
 @use "./blocks/main-container.scss";
 @use "./blocks/hero.scss";
-@use "./blocks/title.scss";
+@use "./common/title.scss";
 @use "./blocks/advantages.scss";
 @use "./blocks/about.scss";
 @use "./blocks/slider.scss";
