@@ -5,14 +5,13 @@
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Кэт энерджи: Подбор программы</title>
+  <link rel="stylesheet" href="css/style.css">
 </head>
 
 <body class="page__body">
   <header class="main-header">
-    <a class="main-header__logo" href="#">
-      <img src="img/logo-cat-mobile.svg" width="33" height="38" alt="Логотип кота.">
-    </a>
     <a class="logo-main" href="#">
+      <img src="img/logo-cat-mobile.svg" width="33" height="38" alt="Логотип рыжего кота.">
       <img src="img/logo-cat-energy.svg" width="101" height="18" alt="Логотип Cat Energy.">
     </a>
     <nav class="main-nav">
@@ -20,7 +19,7 @@
         <span class="visually-hidden">Открыть меню навигации</span>
       </button>
       <div class="main-nav__wrapper">
-        <ul class="main-nav__list site-list">
+        <ul class="main-nav__list site-list reset-list">
           <li class="site-list__item site-list__item--current">
             <a class="site-list__link" href="index.html">
               Главная
@@ -43,27 +42,27 @@
 
   <main class="main-container">
     <h1 class="visually-hidden">Интернет-магазин фитнес еды для котиков</h1>
-    <section class="nutrition-program-form">
-      <h2 class="nutrition-program-form__title">Подбор программы</h2>
-      <p class="nutrition-program-form__text">
+    <section class="page__nutrition-program nutrition-program">
+      <h2 class="nutrition-program__title">Подбор программы</h2>
+      <p class="nutrition-program__text">
         Заполните анкету, и мы подберем
         программу питания для вашего кота
       </p>
-      <form class="nutrition-program" action="https://echo.htmlacademy.ru/" method="get">
-        <label class="nutrition-program__label">
+      <form class="nutrition-program-form" action="https://echo.htmlacademy.ru/" method="get">
+        <label class="nutrition-program-form__label">
           Имя:*
-          <input class="nutrition-program__field field" type="text" name="cat-name" value="Барсик" required>
+          <input class="nutrition-program-form__field field" type="text" name="cat-name" value="Барсик" required>
         </label>
-        <label class="nutrition-program__label">
+        <label class="nutrition-program-form__label">
           Вес (кг):*
-          <input class="nutrition-program__field field" type="text" name="cat-weight" value="7" required>
+          <input class="nutrition-program-form__field field" type="text" name="cat-weight" value="7" required>
         </label>
-        <label class="nutrition-program__label">
+        <label class="nutrition-program-form__label">
           Возраст (лет):
-          <input class="nutrition-program__field field" type="text" name="cat-age" value="7">
+          <input class="nutrition-program-form__field field" type="text" name="cat-age" value="7">
         </label>
 
-        <ul class="nutrition-program__list radio-list">
+        <ul class="nutrition-program-form__list radio-list reset-list">
           <li class="radio-list__item">
             <label class="radio-list__control control">
               Похудение
@@ -84,57 +83,57 @@
           </li>
         </ul>
 
-        <fieldset class="nutrition-program__group">
-          <legend class="nutrition-program__group-title">Контактные данные (владельца кота)</legend>
-          <label class="nutrition-program__label">
+        <fieldset class="nutrition-program-form__group">
+          <legend class="nutrition-program-form__group-title">Контактные данные (владельца кота)</legend>
+          <label class="nutrition-program-form__label">
             E-mail:*
-            <input class="nutrition-program__field field" type="email" name="cat-owner-email" value="kuklachev@gmail.com" required>
+            <input class="nutrition-program-form__field field" type="email" name="cat-owner-email" value="kuklachev@gmail.com" required>
           </label>
-          <label class="nutrition-program__label">
+          <label class="nutrition-program-form__label">
             Телефон:*
-            <input class="nutrition-program__field field" type="tel" name="cat-owner-number" value="8 (960) 900-60-90" required>
+            <input class="nutrition-program-form__field field" type="tel" name="cat-owner-number" value="8 (960) 900-60-90" required>
           </label>
         </fieldset>
 
-        <fieldset class="nutrition-program__group">
-          <legend class="nutrition-program__group-title">Комментарий</legend>
+        <fieldset class="nutrition-program-form__group">
+          <legend class="nutrition-program-form__group-title">Комментарий</legend>
           <textarea class="field comment-field" name="cat-habits" cols="30" rows="10" placeholder="Расскажите обо всех повадках кота"></textarea>
         </fieldset>
 
-        <fieldset class="nutrition-program__group">
-          <legend class="nutrition-program__group-title">Дополнительно</legend>
+        <fieldset class="nutrition-program-form__group">
+          <legend class="nutrition-program-form__group-title">Дополнительно</legend>
 
-          <ul class="nutrition-program__list checkbox-list">
+          <ul class="nutrition-program-form__list checkbox-list reset-list">
             <li class="checkbox-list__item">
               <label class="checkbox-list__control control">
-                Сахарозаменитель
                 <input class="checkbox-list__field field visually-hidden" type="checkbox" name="product-sweetener" value="add" checked>
+                Сахарозаменитель
               </label>
             </li>
             <li class="checkbox-list__item">
               <label class="checkbox-list__control control">
-                Питьевая вода
                 <input class="checkbox-list__field field visually-hidden" type="checkbox" name="product-drinking-water" value="add">
+                Питьевая вода
               </label>
             </li>
             <li class="checkbox-list__item">
               <label class="checkbox-list__control control">
-                Молоко
                 <input class="checkbox-list__field field visually-hidden" type="checkbox" name="product-milk" value="add">
+                Молоко
               </label>
             </li>
             <li class="checkbox-list__item">
               <label class="checkbox-list__control control">
-                Витамины
                 <input class="checkbox-list__field field visually-hidden" type="checkbox" name="product-vitamins" value="add">
+                Витамины
               </label>
             </li>
           </ul>
 
-          <button class="button" type="submit">
+          <button class="button button--primary" type="submit">
             Отправить заявку
           </button>
-          <span class="nutrition-program__text-required-fields">* — Обязательные поля</span>
+          <span class="nutrition-program-form__text-required-fields">* — Обязательные поля</span>
         </fieldset>
       </form>
     </section>
@@ -147,7 +146,7 @@
       </address>
     </div>
 
-    <section class="map">
+    <section class="page__map map">
       <h2 class="visually-hidden">Мы на карте.</h2>
       <div class="map__wrapper">
         <img src="img/map-location.png" width="320" height="362" alt="Мы на карте.">
@@ -163,7 +162,7 @@
         </a>
       </div>
       <div class="main-footer__social social">
-        <ul class="social__list">
+        <ul class="social__list reset-list">
           <li class="social__item">
             <a class="social__link social__link--vkontakte" href="#" aria-label="Мы в вконтакте." target="_blank"></a>
           </li>

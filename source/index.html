@@ -5,14 +5,13 @@
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Кэт энерджи: Главная</title>
+  <link rel="stylesheet" href="css/style.css">
 </head>
 
 <body class="page__body">
   <header class="main-header">
-    <a class="main-header__logo" href="#">
-      <img src="img/logo-cat-mobile.svg" width="33" height="38" alt="Логотип рыжего кота.">
-    </a>
     <a class="logo-main" href="#">
+      <img src="img/logo-cat-mobile.svg" width="33" height="38" alt="Логотип рыжего кота.">
       <img src="img/logo-cat-energy.svg" width="101" height="18" alt="Логотип Cat Energy.">
     </a>
     <nav class="main-nav">
@@ -20,7 +19,7 @@
         <span class="visually-hidden">Открыть меню навигации</span>
       </button>
       <div class="main-nav__wrapper">
-        <ul class="main-nav__list site-list">
+        <ul class="main-nav__list site-list reset-list">
           <li class="site-list__item site-list__item--current">
             <a class="site-list__link" href="index.html">
               Главная
@@ -43,23 +42,24 @@
 
   <main class="main-container">
     <h1 class="visually-hidden">Интернет-магазин фитнес еды для котиков</h1>
-    <section class="hero">
+    <section class="page__hero hero">
       <h2 class="visually-hidden">Промо предложения</h2>
       <div class="hero__wrapper">
-        <h2 class="hero__title title">Функциональное питание для котов</h2>
+        <h2 class="hero__title">Функциональное питание для котов</h2>
         <p class="hero__description">
           Занялся собой? Займись котом!
         </p>
-        <a class="hero__link" href="#" target="_blank">
+        <a class="hero__link button button--primary" href="#" target="_blank">
           Подобрать программу
         </a>
+        <img src="img/cat-energy-pro-chicken.png" alt="Cat energy Pro 500г с курицей.">
       </div>
     </section>
 
-    <section class="advantages">
+    <section class="page__advantages advantages">
       <h2 class="visually-hidden">Преимущества</h2>
       <div class="advantages__wrapper">
-        <ul class="advantages__list">
+        <ul class="advantages__list reset-list">
           <li class="advantages__item advantages__item--weight-loss">
             <h3 class="advantages__title">Похудение</h3>
             <p class="advantages__description">
@@ -82,10 +82,10 @@
       </div>
     </section>
 
-    <section class="about">
+    <section class="page__about about">
       <h2 class="about__title title">Как это работает</h2>
       <div class="about__wrapper">
-        <ul class="about__list">
+        <ul class="about__list reset-list">
           <li class="about__item about__item--leaf">
             Функциональное питание содержит только полезные питательные вещества.
           </li>
@@ -102,7 +102,7 @@
       </div>
     </section>
 
-    <section class="slider">
+    <section class="page__slider slider">
       <h2 class="slider__title title">Живой пример</h2>
       <div class="slider__wrapper">
         <p class="slider__text">
@@ -133,7 +133,7 @@
       </address>
     </div>
 
-    <section class="map">
+    <section class="page__map map">
       <h2 class="visually-hidden">Мы на карте.</h2>
       <div class="map__wrapper">
         <img src="img/map-location.png" width="320" height="362" alt="Мы на карте.">
@@ -149,7 +149,7 @@
         </a>
       </div>
       <div class="main-footer__social social">
-        <ul class="social__list">
+        <ul class="social__list reset-list">
           <li class="social__item">
             <a class="social__link social__link--vkontakte" href="#" aria-label="Мы в вконтакте." target="_blank"></a>
           </li>
