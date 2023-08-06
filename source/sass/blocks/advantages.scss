@@ -6,11 +6,11 @@
   gap: 20px;
 
   @media (min-width: $tablet-width) {
-    flex-direction: row;
     gap: 30px;
   }
 
   @media (min-width: $desktop-width) {
+    flex-direction: row;
     gap: 80px;
   }
 }
