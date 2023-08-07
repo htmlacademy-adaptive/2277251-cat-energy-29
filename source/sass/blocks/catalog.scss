@@ -1,3 +1,5 @@
+@import "common/variables.scss";
+
 .catalog__title {
   margin: 27px 20px 41px 20px;
   color: #000000;
@@ -13,15 +15,53 @@
   margin: 0;
 }
 
+.catalog__list {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+
+  @media (min-width: $tablet-width) {
+    gap: 60px;
+    flex-direction: row;
+  }
+
+  @media (min-width: $desktop-width) {
+    gap: 80px;
+  }
+}
+
+.catalog__item {
+  @media (min-width: $tablet-width) {
+    background-color: #f1f2f2;
+  }
+}
+
 .catalog__item:not(:last-child) {
   padding: 11px 20px 14px 20px;
+}
+
+.catalog__additional-wrapper {
+  display: flex;
+  flex-direction: column;
+
+  @media (min-width: $desktop-width) {
+    justify-content: space-between;
+    flex-direction: row;
+  }
 }
 
 .catalog__additional-goods-list {
   margin-bottom: 19px;
 }
 
+.catalog__additional-goods-item {
+  @media (min-width: $desktop-width) {
+    display: flex;
+  }
+}
+
 .catalog__additional-goods-link {
+  display: block;
   color: #222222;
   font-family: "Oswald", sans-serif;
   font-size: 16px;

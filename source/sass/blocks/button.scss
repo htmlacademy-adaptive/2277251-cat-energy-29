@@ -8,7 +8,10 @@
   border: none;
 
   &--primary {
+    display: block;
     background-color: #68b738;
+    padding: 10px 109px;
+    text-align: center;
   }
 
   &--additional {
