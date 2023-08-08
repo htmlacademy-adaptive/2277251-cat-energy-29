@@ -1,3 +1,15 @@
+@import "common/variables.scss";
+
+.checkbox-list {
+  display: flex;
+  flex-direction: column;
+
+  @media (min-width: $tablet-width) {
+    flex-direction: row;
+    flex-wrap: wrap;
+  }
+}
+
 .checkbox-list__control {
   color: 444444;
   font-family: "Oswald", sans-serif;
