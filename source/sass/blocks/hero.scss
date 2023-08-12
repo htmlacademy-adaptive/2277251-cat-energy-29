@@ -1,6 +1,8 @@
+@import "common/variables.scss";
+
 .hero {
   position: relative;
-  background-image: url("/img/cat-background.png");
+  background-image: url("../img/cat-background.png");
   background-repeat: no-repeat;
   background-position: center;
   background-size: 100%;
@@ -15,6 +17,14 @@
     left: 0;
     background-color: rgba(104, 183, 56, 0.85);
     z-index: -1;
+
+    @media (min-width: $tablet-width) {
+      display: none;
+    }
+  }
+
+  @media (min-width: $tablet-width) {
+    background-image: none;
   }
 }
 
@@ -45,4 +55,20 @@
 .hero__link {
   color: #ffffff;
   text-align: center;
+}
+
+@media (min-width: $tablet-width) {
+  .hero__title {
+    max-width: 425px;
+    text-align: initial;
+    color: #000000;
+    font-size: 60px;
+  }
+
+  .hero__description {
+    text-align: initial;
+    color: #000000;
+    font-size: 20px;
+    line-height: 20px;
+  }
 }

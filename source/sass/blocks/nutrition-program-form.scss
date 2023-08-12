@@ -1,3 +1,14 @@
+@import "common/variables.scss";
+
+.nutrition-program-form__wrapper {
+  display: flex;
+  flex-direction: column;
+
+  @media (min-width: $desktop-width) {
+    flex-direction: row;
+  }
+}
+
 .nutrition-program-form__label {
   color: #444444;
   font-family: "Oswald", sans-serif;
@@ -5,6 +16,10 @@
   font-weight: 400;
   line-height: 18px;
   text-transform: uppercase;
+}
+
+.nutrition-program-form__group {
+  border: none;
 }
 
 .nutrition-program-form__group-title {

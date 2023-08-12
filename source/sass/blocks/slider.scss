@@ -1,3 +1,5 @@
+@import "common/variables.scss";
+
 .page__slider {
   padding: 25px 20px 40px 20px;
   background-color: #eaeaea;
@@ -5,6 +7,11 @@
 
 .slider__title {
   margin: 0 0 40px 0;
+
+  @media (min-width: $tablet-width) {
+    font-size: 60px;
+    line-height: 60px;
+  }
 }
 
 .slider__text {
@@ -14,6 +21,26 @@
   font-style: normal;
   font-weight: 400;
   line-height: 18px;
+
+  @media (min-width: $tablet-width) {
+    font-size: 16px;
+    line-height: 24px;
+  }
+}
+
+.slider__list {
+  display: flex;
+  gap: 32px;
+
+  @media (min-width: $tablet-width) {
+    gap: 42px;
+  }
+}
+
+.slider__item--price {
+  @media (min-width: $tablet-width) {
+    margin-left: auto;
+  }
 }
 
 .slider__value {
@@ -23,15 +50,47 @@
   font-size: 24px;
   font-weight: 400;
   line-height: 24px;
+
+  @media (min-width: $tablet-width) {
+    font-size: 30px;
+    line-height: 37px;
+  }
+}
+
+.slider__value--price {
+  line-height: 20px;
+  font-size: 14px;
+
+  @media (min-width: $tablet-width) {
+    font-size: 20px;
+  }
 }
 
 .slider__description {
+  margin: 0;
   color: #444444;
   text-align: center;
   font-family: "Lato", sans-serif;
   font-size: 12px;
   font-weight: 400;
   line-height: 12px;
+
+  @media (min-width: $tablet-width) {
+    font-size: 14px;
+    line-height: 14px;
+  }
+}
+
+.slider__description--expenses {
+  font-family: "Oswald", sans-serif;
+  font-size: 14px;
+  line-height: 20px;
+  color: #000000;
+  text-transform: uppercase;
+
+  @media (min-width: $tablet-width) {
+    font-size: 20px;
+  }
 }
 
 .slider__expenses {

@@ -1,3 +1,7 @@
+.card__link-image {
+  display: block;
+}
+
 .card__link {
   color: #222222;
   font-family: "Oswald", sans-serif;
@@ -8,6 +12,7 @@
 }
 
 .card__feature-wrapper {
+  display: flex;
   color: #444444;
   text-align: center;
   font-family: "Lato", sans-serif;

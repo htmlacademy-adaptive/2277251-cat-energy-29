@@ -1,1 +1,24 @@
 /* Временный комментарий */
+@import "common/variables.scss";
+
+.main-nav__toggle {
+  @media (min-width: $tablet-width) {
+    display: none;
+  }
+}
+
+.main-nav__list {
+  display: flex;
+  flex-direction: column;
+
+  @media (min-width: $tablet-width) {
+    display: flex;
+    flex-direction: row;
+    justify-content: end;
+    gap: 33px;
+  }
+
+  @media (min-width: $desktop-width) {
+    /* . */
+  }
+}
