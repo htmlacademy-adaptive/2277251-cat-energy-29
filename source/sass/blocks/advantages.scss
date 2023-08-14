@@ -40,6 +40,17 @@
       background-image: url("../img/icon-cat-slim.svg");
       background-repeat: no-repeat;
       background-position: center;
+
+      @media (min-width: $tablet-width) {
+       top: 81px;
+       right: 63px;
+       left: auto;
+      }
+
+      @media (min-width: $desktop-width) {
+        top: 41px;
+        left: 52px;
+      }
     }
   }
 
@@ -56,6 +67,17 @@
       background-image: url("../img/icon-cat-pro.svg");
       background-repeat: no-repeat;
       background-position: center;
+
+      @media (min-width: $tablet-width) {
+        top: 91px;
+        right: 29px;
+        left: auto;
+      }
+
+      @media (min-width: $desktop-width) {
+        top: 47px;
+        left: 33px;
+      }
     }
 }
 }
@@ -70,6 +92,13 @@
   text-transform: uppercase;
 
   @media (min-width: $tablet-width) {
+    margin: 0 0 24px 0;
+    font-size: 36px;
+    line-height: 36px;
+  }
+
+  @media (min-width: $desktop-width) {
+    margin: 0 0 73px 94px;
     font-size: 36px;
     line-height: 36px;
   }
@@ -83,6 +112,7 @@
   line-height: 18px;
 
   @media (min-width: $tablet-width) {
+    max-width: 340px;
     font-size: 16px;
     line-height: 24px;
     color: #000000;
