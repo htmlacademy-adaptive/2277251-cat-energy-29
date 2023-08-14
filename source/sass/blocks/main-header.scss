@@ -2,3 +2,8 @@
 .main-header {
   padding: 13px 20px;
 }
+
+.main-header__wrapper {
+  display: flex;
+  justify-content: space-between;
+}
