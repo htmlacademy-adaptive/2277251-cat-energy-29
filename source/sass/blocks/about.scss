@@ -56,20 +56,20 @@
     position: relative;
 
     &::after {
-    content: "";
-    position: absolute;
-    top: 15px;
-    left: -65px;
-    width: 30px;
-    height: 32px;
-    background-image: url("../img/icon-leaf.svg");
-    background-repeat: no-repeat;
-    background-position: center;
+      content: "";
+      position: absolute;
+      top: 15px;
+      left: -65px;
+      width: 30px;
+      height: 32px;
+      background-image: url("../img/icon-leaf.svg");
+      background-repeat: no-repeat;
+      background-position: center;
 
-    @media (min-width: $tablet-width) {
-      top: 25px;
-      left: -55px;
-    }
+      @media (min-width: $tablet-width) {
+        top: 25px;
+        left: -55px;
+      }
     }
   }
 
@@ -77,20 +77,20 @@
     position: relative;
 
     &::after {
-    content: "";
-    position: absolute;
-    top: 15px;
-    left: -65px;
-    width: 30px;
-    height: 32px;
-    background-image: url("../img/icon-liquid.svg");
-    background-repeat: no-repeat;
-    background-position: center;
+      content: "";
+      position: absolute;
+      top: 15px;
+      left: -65px;
+      width: 30px;
+      height: 32px;
+      background-image: url("../img/icon-liquid.svg");
+      background-repeat: no-repeat;
+      background-position: center;
 
-    @media (min-width: $tablet-width) {
-      top: 25px;
-      left: -55px;
-    }
+      @media (min-width: $tablet-width) {
+        top: 25px;
+        left: -55px;
+      }
     }
   }
 
@@ -98,20 +98,20 @@
     position: relative;
 
     &::after {
-    content: "";
-    position: absolute;
-    top: 15px;
-    left: -65px;
-    width: 30px;
-    height: 32px;
-    background-image: url("../img/icon-eat.svg");
-    background-repeat: no-repeat;
-    background-position: center;
+      content: "";
+      position: absolute;
+      top: 15px;
+      left: -65px;
+      width: 30px;
+      height: 32px;
+      background-image: url("../img/icon-eat.svg");
+      background-repeat: no-repeat;
+      background-position: center;
 
-    @media (min-width: $tablet-width) {
-      top: 25px;
-      left: -55px;
-    }
+      @media (min-width: $tablet-width) {
+        top: 25px;
+        left: -55px;
+      }
     }
   }
 
@@ -119,20 +119,20 @@
     position: relative;
 
     &::after {
-    content: "";
-    position: absolute;
-    top: 15px;
-    left: -65px;
-    width: 30px;
-    height: 32px;
-    background-image: url("../img/icon-alarm.svg");
-    background-repeat: no-repeat;
-    background-position: center;
+      content: "";
+      position: absolute;
+      top: 15px;
+      left: -65px;
+      width: 30px;
+      height: 32px;
+      background-image: url("../img/icon-alarm.svg");
+      background-repeat: no-repeat;
+      background-position: center;
 
-    @media (min-width: $tablet-width) {
-      top: 25px;
-      left: -55px;
-    }
+      @media (min-width: $tablet-width) {
+        top: 25px;
+        left: -55px;
+      }
     }
   }
 
