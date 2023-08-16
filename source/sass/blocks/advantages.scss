@@ -42,9 +42,9 @@
       background-position: center;
 
       @media (min-width: $tablet-width) {
-       top: 81px;
-       right: 63px;
-       left: auto;
+        top: 81px;
+        right: 63px;
+        left: auto;
       }
 
       @media (min-width: $desktop-width) {
@@ -79,7 +79,7 @@
         left: 33px;
       }
     }
-}
+  }
 }
 
 .advantages__title {
