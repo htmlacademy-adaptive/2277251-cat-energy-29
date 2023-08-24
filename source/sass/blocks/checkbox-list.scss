@@ -3,6 +3,7 @@
 .checkbox-list {
   display: flex;
   flex-direction: column;
+  border: none;
 
   @media (min-width: $tablet-width) {
     flex-direction: row;

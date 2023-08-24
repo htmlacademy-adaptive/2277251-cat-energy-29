@@ -10,12 +10,30 @@
 }
 
 .nutrition-program-form__label {
+  display: flex;
+  gap: 13px;
+  align-items: center;
+  margin-bottom: 14px;
   color: #444444;
   font-family: "Oswald", sans-serif;
   font-size: 16px;
   font-weight: 400;
   line-height: 18px;
   text-transform: uppercase;
+}
+
+.nutrition-program-form__field {
+  padding: 14px 0 13px 15px;
+  flex-grow: 1;
+}
+
+.nutrition-program-form__list {
+  display: flex;
+  flex-direction: column;
+  gap: 13px;
+  border-top: 1px solid #e7e7e7;
+  border-bottom: 1px solid #e7e7e7;
+  padding: 22px 0 19px 0;
 }
 
 .nutrition-program-form__group {
@@ -34,6 +52,9 @@
 }
 
 .nutrition-program-form__text-required-fields {
+  display: block;
+  margin-top: 21px;
+  text-align: center;
   color: #000000;
   font-family: "Lato", sans-serif;
   font-size: 14px;

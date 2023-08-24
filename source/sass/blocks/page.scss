@@ -1,3 +1,5 @@
+@import "common/variables.scss";
+
 .page {
   height: 100%;
 }
@@ -15,4 +17,12 @@
 
 .page__advantages {
   margin-bottom: 20px;
+}
+
+.page__nutrition-program {
+  border-top: 1px solid #e7e7e7;
+
+  @media (min-width: $tablet-width) {
+    border-top: none;
+  }
 }

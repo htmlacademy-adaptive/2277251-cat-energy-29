@@ -9,6 +9,10 @@
     grid-template-columns: 163px 157px;
     justify-content: space-between;
   }
+
+  &--extended {
+    background-color: #f2f2f2;
+  }
 }
 
 .event-invitation__description {
