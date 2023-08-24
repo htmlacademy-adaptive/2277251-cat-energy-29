@@ -17,5 +17,19 @@
 }
 
 .main-footer__logo {
-  margin-top: 15px;
+  border-bottom: 1px solid #d9d9d9;
+  padding-bottom: 20px;
+
+  @media (min-width: $tablet-width) {
+    border-bottom: none;
+  }
+}
+
+.main-footer__social {
+  border-bottom: 1px solid #d9d9d9;
+  padding: 20px 0;
+
+  @media (min-width: $tablet-width) {
+    border-bottom: none;
+  }
 }
