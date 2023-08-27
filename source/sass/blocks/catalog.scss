@@ -32,12 +32,19 @@
 
 .catalog__item {
   @media (min-width: $tablet-width) {
+    display: flex;
+    flex-direction: column;
+    min-width: 324px;
     background-color: #f1f2f2;
   }
 }
 
 .catalog__item:not(:last-child) {
   padding: 11px 20px 14px 20px;
+}
+
+.catalog__additional-goods-group {
+  border: none;
 }
 
 .catalog__additional-wrapper {
