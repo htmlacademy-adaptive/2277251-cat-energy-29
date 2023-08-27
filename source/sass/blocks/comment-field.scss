@@ -1,3 +1,8 @@
 .comment-field {
   width: 100%;
+  padding: 12px;
+}
+
+.comment-field::placeholder {
+  color: #444444;
 }
