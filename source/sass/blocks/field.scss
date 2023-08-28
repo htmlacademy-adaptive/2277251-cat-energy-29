@@ -6,4 +6,16 @@
   font-weight: 400;
   line-height: 18px;
   text-transform: uppercase;
+
+  &:hover {
+    border: 1px solid #cdcdcd;
+  }
+
+  &:focus-within {
+    border-color: #444444;
+  }
+
+  &:disabled {
+    border-color: #ff8282;
+  }
 }
