@@ -13,6 +13,15 @@
     padding: 10px 0;
     text-align: center;
     width: 100%;
+
+    &:hover {
+      background-color: #5eaa2f;
+    }
+
+    &:active {
+      background-color: #5eaa2f;
+      color: #8dc36d;
+    }
   }
 
   &--additional {
