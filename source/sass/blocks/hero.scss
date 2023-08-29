@@ -2,14 +2,35 @@
 
 .hero {
   position: relative;
-  background-image: url("../img/cat-background.png");
-  background-repeat: no-repeat;
-  background-position: top;
-  background-size: 100%;
-  z-index: 1;
 
-  @media (min-width: $tablet-width) {
-    background-image: none;
+  &::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 100%;
+    height: 302px;
+    background-image: url("../img/cat-background.png");
+    background-repeat: no-repeat;
+    background-position: top;
+    background-color: #63a73a;
+    z-index: -1;
+
+    @media (min-width: $tablet-width) {
+      content: none;
+    }
+
+    @media (min-width: $desktop-width) {
+      content: "";
+      position: absolute;
+      top: -76px;
+      width: 50%;
+      height: 100%;
+      background-image: url("../img/cat-background.png");
+      background-repeat: no-repeat;
+      background-position: right;
+      background-size: contain;
+    }
   }
 }
 
