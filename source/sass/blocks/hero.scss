@@ -61,6 +61,10 @@
 .hero__link {
   color: #ffffff;
   text-align: center;
+
+  @media (min-width: $tablet-width) {
+    max-width: 244px;
+  }
 }
 
 @media (min-width: $tablet-width) {
