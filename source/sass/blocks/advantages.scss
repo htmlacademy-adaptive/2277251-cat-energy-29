@@ -10,6 +10,7 @@
   }
 
   @media (min-width: $desktop-width) {
+    justify-content: space-between;
     flex-direction: row;
     gap: 80px;
   }
@@ -24,6 +25,7 @@
   }
 
   @media (min-width: $desktop-width) {
+    min-width: 570px;
     padding: 41px 61px 55px 52px;
   }
 
