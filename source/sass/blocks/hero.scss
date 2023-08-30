@@ -34,8 +34,12 @@
   }
 }
 
+.hero__wrapper {
+  padding-top: 28px;
+}
+
 .hero__title {
-  margin: 0;
+  margin: 0 0 25px 0;
   color: #ffffff;
   text-align: center;
   font-family: "Oswald", sans-serif;
@@ -45,6 +49,7 @@
 }
 
 .hero__description {
+  margin: 0 0 29px 0;
   color: #ffffff;
   text-align: center;
   font-family: "Oswald", sans-serif;
