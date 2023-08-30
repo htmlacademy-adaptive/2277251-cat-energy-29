@@ -3,7 +3,7 @@
 .event-invitation {
   display: grid;
   grid-template-columns: 1fr 1fr;
-  padding: 26px 20px;
+  padding: 26px 0;
 
   @media (min-width: $tablet-width) {
     grid-template-columns: 163px 157px;
