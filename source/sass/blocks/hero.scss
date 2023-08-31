@@ -79,6 +79,7 @@
   text-transform: uppercase;
 
   @media (min-width: $tablet-width) {
+    max-width: 425px;
     text-align: initial;
     color: #000000;
     font-size: 20px;
