@@ -37,6 +37,8 @@
 }
 
 .nutrition-program-form__group {
+  margin: 0;
+  padding: 0;
   border: none;
 }
 
@@ -53,7 +55,7 @@
 
 .nutrition-program-form__text-required-fields {
   display: block;
-  margin-top: 21px;
+  margin: 20px 0;
   text-align: center;
   color: #000000;
   font-family: "Lato", sans-serif;
