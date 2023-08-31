@@ -1,6 +1,13 @@
+@import "common/variables.scss";
+
 .comment-field {
   width: 100%;
   padding: 12px;
+
+  @media (min-width: $tablet-width) {
+    font-size: 20px;
+    line-height: 30px;
+  }
 }
 
 .comment-field::placeholder {

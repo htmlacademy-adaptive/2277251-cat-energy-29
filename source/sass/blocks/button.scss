@@ -1,3 +1,5 @@
+@import "common/variables.scss";
+
 .button {
   color: #ffffff;
   font-family: "Oswald", sans-serif;
@@ -21,6 +23,11 @@
     &:active {
       background-color: #5eaa2f;
       color: #8dc36d;
+    }
+
+    @media (min-width: $tablet-width) {
+      font-size: 20px;
+      line-height: 26px;
     }
   }
 
