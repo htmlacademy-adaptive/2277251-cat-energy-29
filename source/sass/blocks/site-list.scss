@@ -27,3 +27,10 @@
     opacity: 0.3;
   }
 }
+
+.site-list__item--current {
+  text-decoration: underline;
+  text-decoration-color: #ffffff;
+  text-decoration-thickness: 2px;
+  text-underline-offset: 12px;
+}
