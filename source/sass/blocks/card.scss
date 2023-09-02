@@ -1,11 +1,17 @@
 @import "common/variables.scss";
 
+.card__image-wrapper {
+  max-width: 140px;
+}
+
 .card__link-image {
   display: block;
   text-align: center;
 }
 
 .card__link {
+  display: block;
+  max-width: 76px;
   color: #222222;
   font-family: "Oswald", sans-serif;
   font-size: 16px;
@@ -20,6 +26,10 @@
     align-self: center;
     text-align: center;
   }
+}
+
+.card__description-wrapper {
+  max-width: 140px;
 }
 
 .card__feature-wrapper {
