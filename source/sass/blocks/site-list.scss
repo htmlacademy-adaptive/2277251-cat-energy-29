@@ -28,16 +28,26 @@
   }
 }
 
+.site-list__link--extended {
+  @media (min-width: $desktop-width) {
+    color: #111111;
+  }
+}
+
 .site-list__item--current {
   text-decoration: underline;
-  text-decoration-color: #ffffff;
+  text-decoration-color: #68b738;
   text-decoration-thickness: 2px;
-  text-underline-offset: 12px;
+  text-underline-offset: 10px;
 }
 
 .site-list__item--current-extended {
   text-decoration: underline;
   text-decoration-color: #68b738;
   text-decoration-thickness: 2px;
-  text-underline-offset: 10px;
+  text-underline-offset: 12px;
+
+  @media (min-width: $desktop-width) {
+    text-decoration-color: #ffffff;
+  }
 }
