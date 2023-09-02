@@ -33,6 +33,7 @@
 .catalog__item {
   display: flex;
   flex-wrap: wrap;
+  justify-content: center;
   gap: 0 28px;
   border-top: 1px solid #EBEBEB;
   border-bottom: 1px solid #EBEBEB;
@@ -46,12 +47,17 @@
   }
 
   @media (min-width: $desktop-width) {
+    min-width: 245px;
     border: none;
   }
 }
 
 .catalog__item:not(:last-child) {
   padding: 20px 0 25px 0;
+
+  @media (min-width: $tablet-width) {
+    padding: 10px 37px 40px 37px;
+  }
 }
 
 .catalog__additional-goods-group {

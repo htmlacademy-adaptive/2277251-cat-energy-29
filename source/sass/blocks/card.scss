@@ -2,6 +2,10 @@
 
 .card__image-wrapper {
   max-width: 140px;
+
+  @media (min-width: $tablet-width) {
+    max-width: none;
+   }
 }
 
 .card__link-image {
@@ -29,7 +33,22 @@
 }
 
 .card__description-wrapper {
+  display: flex;
+  flex-direction: column;
   max-width: 140px;
+
+  @media (min-width: $tablet-width) {
+   max-width: none;
+  }
+}
+
+.card__features {
+  display: flex;
+  flex-direction: column;
+
+  @media (min-width: $tablet-width) {
+    gap: 10px;
+  }
 }
 
 .card__feature-wrapper {
@@ -47,4 +66,8 @@
     line-height: 20px;
     border-bottom: 1px solid #cdcdcd;
   }
+}
+
+.card__button {
+  margin-top: auto;
 }
