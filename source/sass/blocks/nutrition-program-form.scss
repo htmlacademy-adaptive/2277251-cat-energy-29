@@ -76,7 +76,8 @@
   border: none;
 }
 
-.nutrition-program-form__group-title-wrapper {
+.nutrition-program-form__group-title-wrapper,
+.catalog__additional-goods-group-title {
   position: relative;
   display: flex;
   gap: 20px;
