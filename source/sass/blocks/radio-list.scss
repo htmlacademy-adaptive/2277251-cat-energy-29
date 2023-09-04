@@ -1,6 +1,10 @@
 @import "common/variables.scss";
 
 .radio-list__control {
+  position: relative;
+  display: flex;
+  padding-left: 60px;
+  cursor: pointer;
   color: #444444;
   font-family: "Oswald", sans-serif;
   font-size: 16px;
@@ -11,5 +15,39 @@
   @media (min-width: $tablet-width) {
     font-size: 20px;
     line-height: normal;
+  }
+}
+
+.radio-list__field + .control__oultine::before {
+  content: "";
+  position: absolute;
+  width: 30px;
+  height: 30px;
+  top: 0;
+  left: 0;
+  border: 1px solid #cdcdcd;
+  border-radius: 50%;
+
+  @media (min-width: $tablet-width) {
+    width: 40px;
+    height: 40px;
+  }
+}
+
+.radio-list__field:checked + .control__oultine::after {
+  content: "";
+  position: absolute;
+  width: 13px;
+  height: 13px;
+  top: 9px;
+  left: 9px;
+  border-radius: 50%;
+  background-color: #68b738;
+
+  @media (min-width: $tablet-width) {
+    width: 18px;
+    height: 18px;
+    top: 11px;
+    left: 11px;
   }
 }
