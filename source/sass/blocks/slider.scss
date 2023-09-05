@@ -79,6 +79,11 @@
     grid-column: 3 / -1;
     margin-left: auto;
   }
+
+  @media (min-width: $desktop-width) {
+    grid-column: 1 / 2;
+    gap: 63px;
+  }
 }
 
 .slider__value {
@@ -103,6 +108,10 @@
   @media (min-width: $tablet-width) {
     font-size: 20px;
   }
+
+  @media (min-width: $desktop-width) {
+    min-width: 100px;
+  }
 }
 
 .slider__description {
@@ -121,6 +130,11 @@
   @media (min-width: $tablet-width) {
     font-size: 14px;
     line-height: 14px;
+    background-color: #ffffff;
+  }
+
+  @media (min-width: $desktop-width) {
+    background-color: #eaeaea;
   }
 }
 
@@ -135,6 +149,10 @@
 
   @media (min-width: $tablet-width) {
     font-size: 20px;
+  }
+
+  @media (min-width: $desktop-width) {
+    min-width: 174px;
   }
 }
 
