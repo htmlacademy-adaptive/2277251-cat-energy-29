@@ -42,11 +42,17 @@
 }
 
 .page__slider {
-  padding: 25px 20px 40px 20px;
+  padding: 25px 0 40px 0;
   background-color: #eaeaea;
 
+  @media (min-width: $tablet-width) {
+    padding: 43px 0 100px 0;
+    background: linear-gradient(to top, #eaeaea, #eaeaea 462px, transparent 462px, transparent 100%);
+  }
+
   @media (min-width: $desktop-width) {
-    padding: 25px 110px 40px 110px;
+    padding: 25px 0 75px 0;
+    background: linear-gradient(to bottom, transparent, transparent 160px, #eaeaea 160px, #eaeaea 100%);
   }
 }
 
