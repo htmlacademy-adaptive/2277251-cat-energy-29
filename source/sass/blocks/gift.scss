@@ -1,11 +1,22 @@
+@import "common/variables.scss";
+
 .gift {
   position: relative;
   width: 280px;
   min-height: 290px;
   background-image: url("../img/cover-for-cat.jpg");
   background-repeat: no-repeat;
-  background-position: center;
   z-index: 1;
+
+  @media (min-width: $tablet-width) {
+    width: 100%;
+    min-height: 200px;
+    background-image: url("../img/cover-for-cat-tablet.jpg");
+  }
+
+  @media (min-width: $desktop-width) {
+    background-image: url("../img/cover-for-cat.jpg");
+  }
 
   &::before {
     content: "";
@@ -16,10 +27,16 @@
     left: 0;
     background-color: rgba(104, 183, 56, 0.85);
     z-index: -1;
+
+    @media (min-width: $desktop-width) {
+      width: 245px;
+      height: 290px;
+    }
   }
 }
 
 .gift__description {
+  margin: 0;
   color: #ffffff;
   text-align: center;
   font-family: "Lato", sans-serif;
