@@ -15,7 +15,7 @@
   }
 
   @media (min-width: $desktop-width) {
-    background-image: url("../img/cover-for-cat.jpg");
+    background-image: url("../img/cover-for-cat-desktop.jpg");
   }
 
   &::before {
@@ -31,6 +31,23 @@
     @media (min-width: $desktop-width) {
       width: 245px;
       height: 290px;
+    }
+  }
+
+  &::after {
+    content: "";
+    position: absolute;
+    width: 78px;
+    height: 80px;
+    top: 59px;
+    left: 101px;
+    background-image: url("../img/icon-gift.svg");
+    background-repeat: no-repeat;
+    background-position: center;
+
+    @media (min-width: $desktop-width) {
+      top: 56px;
+      left: 83px;
     }
   }
 }
