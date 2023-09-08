@@ -104,17 +104,19 @@
 }
 
 .catalog__additional-goods-list {
-  margin-bottom: 19px;
+  margin-bottom: 35px;
 
   @media (min-width: $tablet-width) {
     border-right: 1px solid #cdcdcd;
     border-left: 1px solid #cdcdcd;
     border-bottom: 1px solid #cdcdcd;
+    margin-bottom: 70px;
   }
 
   @media (min-width: $desktop-width) {
     border: none;
     border-bottom: 1px solid #cdcdcd;
+    margin-bottom: 0;
   }
 }
 
@@ -196,5 +198,20 @@
 
   @media (min-width: $desktop-width) {
     max-width: 244px;
+  }
+}
+
+.catalog__gift {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding: 59px 61px 43px 58px;
+
+  @media (min-width: $tablet-width) {
+    padding: 57px 125px 60px 77px;
+  }
+
+  @media (min-width: $desktop-width) {
+    padding: 56px 42px 43px 42px;
   }
 }
