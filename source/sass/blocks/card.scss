@@ -81,6 +81,8 @@
 }
 
 .card__show-more {
+  position: relative;
+
   @media (min-width: $tablet-width) {
     padding: 50px 20px 40px 20px;
     justify-content: end;
@@ -90,5 +92,25 @@
 
   @media (min-width: $desktop-width) {
     padding: 50px 36px 40px 36px;
+  }
+
+  &::before {
+    content: "";
+    position: absolute;
+    width: 30px;
+    height: 30px;
+    top: 25px;
+    background-image: url("../img/icon-plus.svg");
+    background-repeat: no-repeat;
+    background-position: center;
+
+    @media (min-width: $tablet-width) {
+      top: 50px;
+      left: 132px;
+    }
+
+    @media (min-width: $desktop-width) {
+      left: 93px;
+    }
   }
 }
