@@ -12,6 +12,14 @@
   margin: 0;
 }
 
+.page__main-container {
+  border-top: 1px solid #e7e7e7;
+
+  @media (min-width: $tablet-width) {
+    border-top: none;
+  }
+}
+
 .page__hero {
   margin-bottom: 20px;
 
@@ -53,18 +61,5 @@
   @media (min-width: $desktop-width) {
     padding: 25px 0 75px 0;
     background: linear-gradient(to bottom, transparent, transparent 160px, #eaeaea 160px, #eaeaea 100%);
-  }
-}
-
-.page__nutrition-program {
-  border-top: 1px solid #e7e7e7;
-
-  @media (min-width: $tablet-width) {
-    border-top: none;
-  }
-
-  @media (min-width: $desktop-width) {
-    border-top: none;
-    padding: 0;
   }
 }
