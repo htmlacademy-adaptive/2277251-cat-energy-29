@@ -65,6 +65,10 @@
   }
 }
 
+.main-nav--nojs .main-nav__wrapper {
+  position: static;
+}
+
 .main-nav__list {
   display: flex;
   flex-direction: column;

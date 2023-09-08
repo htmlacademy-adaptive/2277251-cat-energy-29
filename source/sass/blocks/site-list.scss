@@ -39,6 +39,20 @@
   }
 }
 
+.main-nav--nojs .site-list__link {
+  border: none;
+  padding: 5px 0;
+  font-size: 11px;
+
+  @media (min-width: $tablet-width) {
+    font-size: 18px;
+  }
+
+  @media (min-width: $desktop-width) {
+    font-size: 20px;
+  }
+}
+
 .site-list__item--current {
   text-decoration: underline;
   text-decoration-color: #68b738;
@@ -54,5 +68,15 @@
 
   @media (min-width: $desktop-width) {
     text-decoration-color: #ffffff;
+  }
+}
+
+.main-nav--nojs .site-list__item--current-extended {
+  text-decoration-thickness: 1px;
+  text-underline-offset: 3px;
+
+  @media (min-width: $tablet-width) {
+    text-decoration-thickness: 2px;
+    text-underline-offset: 12px;
   }
 }
