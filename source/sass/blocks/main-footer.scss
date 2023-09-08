@@ -1,7 +1,7 @@
 @import "common/variables.scss";
 
 .main-footer {
-  padding: 40px 20px;
+  padding: 40px 0;
   margin-top: auto;
   background-color: #f2f2f2;
 }
@@ -13,9 +13,28 @@
   @media (min-width: $tablet-width) {
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
+    gap: 100px;
   }
 }
 
 .main-footer__logo {
-  margin-top: 15px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-bottom: 1px solid #d9d9d9;
+  padding-bottom: 20px;
+
+  @media (min-width: $tablet-width) {
+    padding-bottom: 0;
+    border-bottom: none;
+  }
+}
+
+.main-footer__social {
+  border-bottom: 1px solid #d9d9d9;
+  padding: 20px 0;
+
+  @media (min-width: $tablet-width) {
+    border-bottom: none;
+  }
 }

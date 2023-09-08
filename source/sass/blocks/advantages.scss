@@ -10,6 +10,7 @@
   }
 
   @media (min-width: $desktop-width) {
+    justify-content: space-between;
     flex-direction: row;
     gap: 80px;
   }
@@ -24,12 +25,67 @@
   }
 
   @media (min-width: $desktop-width) {
+    min-width: 570px;
     padding: 41px 61px 55px 52px;
+  }
+
+  &--weight-loss {
+    position: relative;
+
+    &::before {
+      content: "";
+      position: absolute;
+      top: 24px;
+      left: 20px;
+      width: 50px;
+      height: 50px;
+      background-image: url("../img/icon-cat-slim.svg");
+      background-repeat: no-repeat;
+      background-position: center;
+
+      @media (min-width: $tablet-width) {
+        top: 81px;
+        right: 63px;
+        left: auto;
+      }
+
+      @media (min-width: $desktop-width) {
+        top: 41px;
+        left: 52px;
+      }
+    }
+  }
+
+  &--mass-gain {
+    position: relative;
+
+    &::before {
+      content: "";
+      position: absolute;
+      top: 24px;
+      left: 13px;
+      width: 67px;
+      height: 50px;
+      background-image: url("../img/icon-cat-pro.svg");
+      background-repeat: no-repeat;
+      background-position: center;
+
+      @media (min-width: $tablet-width) {
+        top: 91px;
+        right: 29px;
+        left: auto;
+      }
+
+      @media (min-width: $desktop-width) {
+        top: 47px;
+        left: 33px;
+      }
+    }
   }
 }
 
 .advantages__title {
-  margin: 0;
+  margin: 0 0 30px 90px;
   color: #000000;
   font-family: "Oswald", sans-serif;
   font-size: 24px;
@@ -38,6 +94,13 @@
   text-transform: uppercase;
 
   @media (min-width: $tablet-width) {
+    margin: 0 0 24px 0;
+    font-size: 36px;
+    line-height: 36px;
+  }
+
+  @media (min-width: $desktop-width) {
+    margin: 0 0 73px 94px;
     font-size: 36px;
     line-height: 36px;
   }
@@ -49,20 +112,30 @@
   font-size: 14px;
   font-weight: 400;
   line-height: 18px;
+  margin: 0 0 15px 0;
+  padding-bottom: 23px;
+  border-bottom: 1px solid #d9d9d9d9;
 
   @media (min-width: $tablet-width) {
+    max-width: 340px;
     font-size: 16px;
     line-height: 24px;
     color: #000000;
+    border-bottom: none;
   }
 }
 
 .advantages__link {
+  display: inline-block;
+  min-width: 134px;
+  padding: 4px 0;
   color: #000000;
-  text-align: center;
   font-family: "Oswald", sans-serif;
   font-size: 16px;
   font-weight: 400;
   line-height: 16px;
   text-transform: uppercase;
+  background-image: url("../img/icon-arrow.svg");
+  background-repeat: no-repeat;
+  background-position: 95px 2px;
 }

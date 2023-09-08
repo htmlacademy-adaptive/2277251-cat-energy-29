@@ -1,7 +1,19 @@
 @import "common/variables.scss";
 
+.catalog__wrapper {
+  margin-bottom: 25px;
+
+  @media (min-width: $tablet-width) {
+    margin-bottom: 70px;
+  }
+
+  @media (min-width: $desktop-width) {
+    margin-bottom: 76px;
+  }
+}
+
 .catalog__title {
-  margin: 27px 20px 41px 20px;
+  margin: 27px 0 41px 0;
   color: #000000;
   font-family: "Oswald", sans-serif;
   font-size: 36px;
@@ -11,8 +23,15 @@
 }
 
 .catalog__title--additional {
-  padding: 25px 0 36px 0;
+  font-size: 24px;
+  line-height: 24px;
+  padding: 0 0 36px 0;
   margin: 0;
+
+  @media (min-width: $tablet-width) {
+    font-size: 36px;
+    line-height: 36px;
+  }
 }
 
 .catalog__list {
@@ -31,13 +50,46 @@
 }
 
 .catalog__item {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 0 28px;
+  border-top: 1px solid #ebebeb;
+  border-bottom: 1px solid #ebebeb;
+
   @media (min-width: $tablet-width) {
+    display: flex;
+    flex-direction: column;
+    min-width: 324px;
     background-color: #f1f2f2;
+    border: none;
+  }
+
+  @media (min-width: $desktop-width) {
+    min-width: 245px;
+    border: none;
   }
 }
 
 .catalog__item:not(:last-child) {
-  padding: 11px 20px 14px 20px;
+  padding: 20px 0 25px 0;
+
+  @media (min-width: $tablet-width) {
+    padding: 10px 37px 40px 37px;
+  }
+}
+
+.catalog__additional-goods-group {
+  border: none;
+  margin-bottom: 35px;
+
+  @media (min-width: $tablet-width) {
+    margin-bottom: 75px;
+  }
+
+  @media (min-width: $desktop-width) {
+    margin-bottom: 87px;
+  }
 }
 
 .catalog__additional-wrapper {
@@ -45,18 +97,63 @@
   flex-direction: column;
 
   @media (min-width: $desktop-width) {
-    justify-content: space-between;
-    flex-direction: row;
+    display: grid;
+    grid-template-columns: 896px 1fr;
+    gap: 80px;
   }
 }
 
 .catalog__additional-goods-list {
-  margin-bottom: 19px;
+  margin-bottom: 35px;
+
+  @media (min-width: $tablet-width) {
+    border-right: 1px solid #cdcdcd;
+    border-left: 1px solid #cdcdcd;
+    border-bottom: 1px solid #cdcdcd;
+    margin-bottom: 70px;
+  }
+
+  @media (min-width: $desktop-width) {
+    border: none;
+    border-bottom: 1px solid #cdcdcd;
+    margin-bottom: 0;
+  }
 }
 
 .catalog__additional-goods-item {
+  align-items: center;
+  border-top: 1px solid #cdcdcd;
+  padding: 13px 0 19px 0;
+
+  @media (min-width: $tablet-width) {
+    padding: 26px 38px 28px 38px;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+  }
+
   @media (min-width: $desktop-width) {
+    padding: 15px 0 17px 0;
     display: flex;
+    gap: 50px;
+  }
+}
+
+.catalog__additional-goods-clarifications {
+  display: flex;
+  justify-content: space-between;
+  gap: 10px;
+  margin: 0 0 15px 0;
+
+  @media (min-width: $tablet-width) {
+    justify-content: initial;
+    justify-self: end;
+  }
+
+  @media (min-width: $desktop-width) {
+    min-width: 285px;
+    justify-content: space-between;
+    margin: 0;
+    margin-left: auto;
   }
 }
 
@@ -68,6 +165,16 @@
   font-weight: 400;
   line-height: 16px;
   text-transform: uppercase;
+  margin-bottom: 13px;
+
+  @media (min-width: $tablet-width) {
+    font-size: 20px;
+    line-height: 20px;
+  }
+
+  @media (min-width: $desktop-width) {
+    margin: 0;
+  }
 }
 
 .catalog__additional-goods-quantity,
@@ -77,4 +184,69 @@
   font-size: 14px;
   font-weight: 400;
   line-height: 14px;
+
+  @media (min-width: $tablet-width) {
+    font-size: 16px;
+    line-height: 20px;
+  }
+}
+
+.catalog__button {
+  font-size: 16px;
+  line-height: 20px;
+  grid-column: 1 / -1;
+
+  @media (min-width: $desktop-width) {
+    max-width: 244px;
+  }
+}
+
+.catalog__gift {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding: 59px 61px 43px 58px;
+
+  @media (min-width: $tablet-width) {
+    padding: 57px 125px 60px 77px;
+  }
+
+  @media (min-width: $desktop-width) {
+    padding: 56px 42px 43px 42px;
+  }
+}
+
+.catalog__show-more {
+  position: relative;
+
+  @media (min-width: $tablet-width) {
+    padding: 50px 20px 40px 20px;
+    justify-content: end;
+    background-color: #ffffff;
+    border: 2px solid #f2f2f2;
+  }
+
+  @media (min-width: $desktop-width) {
+    padding: 50px 36px 40px 36px;
+  }
+
+  &::before {
+    content: "";
+    position: absolute;
+    width: 30px;
+    height: 30px;
+    top: 25px;
+    background-image: url("../img/icon-plus.svg");
+    background-repeat: no-repeat;
+    background-position: center;
+
+    @media (min-width: $tablet-width) {
+      top: 50px;
+      left: 132px;
+    }
+
+    @media (min-width: $desktop-width) {
+      left: 93px;
+    }
+  }
 }

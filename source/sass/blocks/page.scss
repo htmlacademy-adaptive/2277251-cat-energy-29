@@ -1,3 +1,5 @@
+@import "common/variables.scss";
+
 .page {
   height: 100%;
 }
@@ -7,4 +9,57 @@
   display: grid;
   grid-template-rows: min-content 1fr min-content;
   background-color: #ffffff;
+  margin: 0;
+}
+
+.page__main-container {
+  border-top: 1px solid #e7e7e7;
+
+  @media (min-width: $tablet-width) {
+    border-top: none;
+  }
+}
+
+.page__hero {
+  margin-bottom: 20px;
+
+  @media (min-width: $desktop-width) {
+    margin-bottom: 0;
+  }
+}
+
+.page__advantages {
+  margin-bottom: 20px;
+
+  @media (min-width: $tablet-width) {
+    margin-bottom: 45px;
+  }
+
+  @media (min-width: $desktop-width) {
+    margin-bottom: 70px;
+  }
+}
+
+.page__about {
+  margin-bottom: 50px;
+  padding: 0 20px;
+
+  @media (min-width: $desktop-width) {
+    padding: 0 110px;
+  }
+}
+
+.page__slider {
+  padding: 25px 0 40px 0;
+  background-color: #eaeaea;
+
+  @media (min-width: $tablet-width) {
+    padding: 43px 0 100px 0;
+    background: linear-gradient(to top, #eaeaea, #eaeaea 462px, transparent 462px, transparent 100%);
+  }
+
+  @media (min-width: $desktop-width) {
+    padding: 25px 0 75px 0;
+    background: linear-gradient(to bottom, transparent, transparent 160px, #eaeaea 160px, #eaeaea 100%);
+  }
 }

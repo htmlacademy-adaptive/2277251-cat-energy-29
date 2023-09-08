@@ -1,11 +1,6 @@
 @import "common/variables.scss";
 
-.page__about {
-  margin-bottom: 50px;
-}
-
 .about__title {
-  padding: 20px 20px 0 20px;
   margin: 0 0 42px 0;
 
   @media (min-width: $tablet-width) {
@@ -15,18 +10,26 @@
 }
 
 .about__list {
-  display: flex;
-  flex-direction: column;
+  display: grid;
   gap: 20px;
+  counter-reset: counter;
 
   @media (min-width: $tablet-width) {
-    flex-direction: row;
-    flex-wrap: wrap;
-    row-gap: 37px;
+    grid-template-columns: 1fr 1fr;
+    gap: 37px 57px;
+  }
+
+  @media (min-width: $desktop-width) {
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    gap: 80px;
   }
 }
 
 .about__item {
+  position: relative;
+  display: grid;
+  grid-template-columns: auto 1fr;
+  gap: 20px;
   color: #444444;
   font-family: "Lato", sans-serif;
   font-size: 14px;
@@ -34,8 +37,69 @@
   line-height: 18px;
 
   @media (min-width: $tablet-width) {
+    &::after {
+      counter-increment: counter;
+      content: counter(counter);
+      position: absolute;
+      top: 0;
+      left: 114px;
+      z-index: -1;
+      color: #f2f2f2;
+      font-family: "Oswald", sans-serif;
+      font-size: 280px;
+      font-weight: 400;
+      line-height: 280px;
+    }
+  }
+
+  &::before {
+    content: "";
+    display: block;
+    width: 60px;
+    height: 60px;
+    background-repeat: no-repeat;
+    background-position: center;
+
+    @media (min-width: $tablet-width) {
+      width: 80px;
+      height: 80px;
+    }
+  }
+
+  &--leaf {
+    &::before {
+      background-image: url("../img/icon-leaf.svg");
+    }
+  }
+
+  &--liquid {
+    &::before {
+      background-image: url("../img/icon-liquid.svg");
+    }
+  }
+
+  &--eat {
+    &::before {
+      background-image: url("../img/icon-eat.svg");
+    }
+  }
+
+  &--time {
+    &::before {
+      background-image: url("../img/icon-clock.svg");
+    }
+  }
+
+  @media (min-width: $tablet-width) {
+    max-width: 250px;
+    gap: 31px;
+    grid-template-columns: auto;
+    padding: 40px 0 57px 0;
     font-size: 16px;
     line-height: 24px;
-    width: 250px;
   }
+}
+
+.about__item-description {
+  margin: 0;
 }
