@@ -22,3 +22,15 @@
     align-items: center;
   }
 }
+
+.main-header__logo-link {
+  @media (min-width: $tablet-width) {
+    display: flex;
+    align-items: center;
+    gap: 13px;
+  }
+
+  @media (min-width: $desktop-width) {
+    gap: 14px;
+  }
+}
