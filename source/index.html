@@ -147,7 +147,12 @@
             <dd class="slider__value slider__value--price">15 000 руб.</dd>
           </div>
         </dl>
-        <img class="slider__image" src="img/slider-image.png" width="280" height="256" alt="Слайдер.">
+        <div class="slider__image-wrapper">
+          <picture>
+            <source media="(min-width: 768px)" srcset="./img/slider-image-tablet.png 1x, ./img/slider-image-tablet@2x.png 2x" width="560" height="512">
+            <img class="slider__image" src="img/slider-image.png" srcset="./img/slider-image@2x.png 2x" width="280" height="256" alt="Слайдер.">
+          </picture>
+        </div>
       </div>
     </section>
 
