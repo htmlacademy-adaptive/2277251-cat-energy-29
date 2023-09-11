@@ -60,7 +60,13 @@
         <p class="hero__description">
           Занялся собой? Займись котом!
         </p>
-        <img src="img/cat-energy-pro-chicken.png" width="280" height="270" alt="Cat energy Pro 500г с курицей.">
+        <div class="hero__img-wrapper">
+          <picture>
+            <source media="(min-width: 1440px)" srcset="./img/cat-energy-pro-chicken-desktop.png 1x, ./img/cat-energy-pro-chicken-desktop@2x.png 2x">
+            <source media="(min-width: 768px)" srcset="./img/cat-energy-pro-chicken-tablet.png 1x, ./img/cat-energy-pro-chicken-tablet@2x.png 2x">
+            <img class="hero__img" src="img/cat-energy-pro-chicken.png" srcset="./img/cat-energy-pro-chicken@2x.png 2x" width="280" height="270" alt="Cat energy Pro 500г с курицей.">
+          </picture>
+        </div>
         <a class="hero__link button button--primary" href="form.html" target="_blank">
           Подобрать программу
         </a>
