@@ -39,8 +39,8 @@
 
   @media (min-width: $tablet-width) {
     display: grid;
-    grid-template-columns: repeat(2,auto);
-    grid-template-rows: repeat(4,min-content);
+    grid-template-columns: repeat(2, auto);
+    grid-template-rows: repeat(4, min-content);
     padding: 65px 0 0 0;
   }
 
@@ -70,7 +70,7 @@
     line-height: 60px;
 
     @media (min-width: $desktop-width) {
-      padding-left: 0px;
+      padding-left: 0;
     }
   }
 }
@@ -98,7 +98,7 @@
 
   @media (min-width: $desktop-width) {
     margin: 0 0 52px 0;
-    padding-left: 0px;
+    padding-left: 0;
   }
 }
 
