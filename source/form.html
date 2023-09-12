@@ -6,14 +6,25 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Кэт энерджи: Подбор программы</title>
   <link rel="stylesheet" href="css/style.css">
+  <link rel="icon" type="image/png" sizes="32x32" href="img/favicon.png">
+  <link rel="apple-touch-icon" href="img/favicon-180.png">
+  <link rel="manifest" href="manifest.webmanifest">
 </head>
 
 <body class="page__body">
   <header class="main-header">
     <div class="main-header__wrapper container">
-      <a class="logo-main" href="index.html">
-        <img src="img/logo-cat-mobile.svg" width="33" height="38" alt="Логотип рыжего кота.">
-        <img src="img/logo-cat-energy.svg" width="101" height="18" alt="Логотип Cat Energy.">
+      <a class="main-header__logo-link logo-main" href="index.html">
+        <picture>
+          <source media="(min-width: 1440px)" srcset="img/logo-cat-desktop.svg" width="70" height="59">
+          <source media="(min-width: 768px)" srcset="img/logo-cat-tablet.svg" width="60" height="50">
+          <img src="img/logo-cat-mobile.svg" width="33" height="38" alt="Логотип рыжего кота.">
+        </picture>
+        <picture>
+          <source media="(min-width: 1440px)" srcset="img/logo-cat-energy-tablet.svg" width="118" height="21">
+          <source media="(min-width: 768px)" srcset="img/logo-cat-energy-tablet.svg">
+          <img class="logo-main__text" src="img/logo-cat-energy.svg" width="101" height="18" alt="Логотип Cat Energy.">
+        </picture>
       </a>
       <!-- Для показа открытого меню без JS - добавить для <nav> ниже класс main-nav--nojs -->
       <nav class="main-nav main-nav--closed">
@@ -158,7 +169,7 @@
                 </label>
               </li>
             </ul>
-            <button class="button button--primary" type="submit">
+            <button class="button nutrition-program-form__button button--primary" type="submit">
               Отправить заявку
             </button>
             <span class="nutrition-program-form__text-required-fields">* — Обязательные поля</span>
@@ -167,19 +178,22 @@
       </form>
     </section>
 
-    <div class="event-invitation event-invitation--extended">
-      <p class="event-invitation__description">
-        Приглашаем к сотрудничеству дилеров!
-      </p>
-      <address class="event-invitation__address">
-        ул. Большая Конюшенная, д. 19/8 Санкт-Петербург
-      </address>
-    </div>
-
     <section class="page__map map">
       <h2 class="visually-hidden">Мы на карте.</h2>
+      <div class="event-invitation event-invitation--extended">
+        <p class="event-invitation__description">
+          Приглашаем к сотрудничеству дилеров!
+        </p>
+        <address class="event-invitation__address">
+          ул. Большая Конюшенная, д. 19/8 Санкт-Петербург
+        </address>
+      </div>
       <div class="map__wrapper">
-        <img class="map__image" src="img/map-location.png" width="320" height="362" alt="Мы на карте.">
+        <picture>
+          <source media="(min-width: 1440px)" srcset="img/map-location-desktop.png">
+          <source media="(min-width: 768px)" srcset="img/map-location-tablet.png">
+          <img class="map__image" src="img/map-location.png" width="320" height="362" alt="Мы на карте.">
+        </picture>
       </div>
     </section>
   </main>

@@ -6,14 +6,25 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Кэт энерджи: Каталог продукции</title>
   <link rel="stylesheet" href="css/style.css">
+  <link rel="icon" type="image/png" sizes="32x32" href="img/favicon.png">
+  <link rel="apple-touch-icon" href="img/favicon-180.png">
+  <link rel="manifest" href="manifest.webmanifest">
 </head>
 
 <body class="page__body">
   <header class="main-header">
     <div class="main-header__wrapper container">
-      <a class="logo-main" href="index.html">
-        <img src="img/logo-cat-mobile.svg" width="33" height="38" alt="Логотип рыжего кота.">
-        <img src="img/logo-cat-energy.svg" width="101" height="18" alt="Логотип Cat Energy.">
+      <a class="main-header__logo-link logo-main" href="index.html">
+        <picture>
+          <source media="(min-width: 1440px)" srcset="img/logo-cat-desktop.svg" width="70" height="59">
+          <source media="(min-width: 768px)" srcset="img/logo-cat-tablet.svg" width="60" height="50">
+          <img src="img/logo-cat-mobile.svg" width="33" height="38" alt="Логотип рыжего кота.">
+        </picture>
+        <picture>
+          <source media="(min-width: 1440px)" srcset="img/logo-cat-energy-tablet.svg" width="118" height="21">
+          <source media="(min-width: 768px)" srcset="img/logo-cat-energy-tablet.svg">
+          <img class="logo-main__text" src="img/logo-cat-energy.svg" width="101" height="18" alt="Логотип Cat Energy.">
+        </picture>
       </a>
       <!-- Для показа открытого меню без JS - добавить для <nav> ниже класс main-nav--nojs -->
       <nav class="main-nav main-nav--closed">
@@ -51,11 +62,13 @@
         <h2 class="catalog__title">Каталог продукции</h2>
         <ul class="catalog__list reset-list">
           <li class="catalog__item card card--extended">
-            <div class="card__image-wrapper">
-              <a class="card__link-image" href="#">
-                <img class="card__image" src="img/cat-energy-pro-chicken-xs.png" alt="Сat Energy Pro Chicken 500g.">
-              </a>
-            </div>
+            <a class="card__link-image" href="#">
+              <picture>
+                <source media="(min-width: 1440px)" srcset="img/cat-energy-pro-chicken-xs-desktop.png, img/cat-energy-pro-chicken-xs-desktop@2x.png 2x" width="169" height="210">
+                <source media="(min-width: 768px)" srcset="img/cat-energy-pro-chicken-xs-tablet.png, img/cat-energy-pro-chicken-xs-tablet@2x.png 2x" width="200" height="210">
+                <img class="card__image" src="img/cat-energy-pro-chicken-xs.png" srcset="img/cat-energy-pro-chicken-xs@2x.png 2x" width="140" height="107" alt="Сat Energy Pro Chicken 500g.">
+              </picture>
+            </a>
             <div class="card__description-wrapper">
               <a class="card__link" href="#">
                 Cat Energy PRO 500 г
@@ -80,11 +93,13 @@
             </a>
           </li>
           <li class="catalog__item card card--extended">
-            <div class="card__image-wrapper">
-              <a class="card__link-image" href="#">
-                <img class="card__image" src="img/cat-energy-pro-chicken-xl.png" alt="Сat Energy Pro Chicken 1000g.">
-              </a>
-            </div>
+            <a class="card__link-image" href="#">
+              <picture>
+                <source media="(min-width: 1440px)" srcset="img/cat-energy-pro-chicken-xl-desktop.png, img/cat-energy-pro-chicken-xl-desktop@2x.png 2x" width="169" height="210">
+                <source media="(min-width: 768px)" srcset="img/cat-energy-pro-chicken-xl-tablet.png, img/cat-energy-pro-chicken-xl-tablet@2x.png 2x" width="200" height="210">
+                <img class="card__image" src="img/cat-energy-pro-chicken-xl.png" srcset="img/cat-energy-pro-chicken-xl@2x.png 2x" width="140" height="107" alt="Сat Energy Pro Chicken 1000g.">
+              </picture>
+            </a>
             <div class="card__description-wrapper">
               <a class="card__link" href="#">
                 Cat Energy PRO 1000 г
@@ -109,11 +124,13 @@
             </a>
           </li>
           <li class="catalog__item card card--extended">
-            <div class="card__image-wrapper">
-              <a class="card__link-image" href="#">
-                <img class="card__image" src="img/cat-energy-pro-fish-xs.png" alt="Сat Energy Pro Fish 500g.">
-              </a>
-            </div>
+            <a class="card__link-image" href="#">
+              <picture>
+                <source media="(min-width: 1440px)" srcset="img/cat-energy-pro-fish-xs-desktop.png, img/cat-energy-pro-fish-xs-desktop@2x.png 2x" width="169" height="210">
+                <source media="(min-width: 768px)" srcset="img/cat-energy-pro-fish-xs-tablet.png, img/cat-energy-pro-fish-xs-tablet@2x.png 2x" width="200" height="210">
+                <img class="card__image" src="img/cat-energy-pro-fish-xs.png" srcset="img/cat-energy-pro-fish-xs@2x.png 2x" width="140" height="107" alt="Сat Energy Pro Fish 500g.">
+              </picture>
+            </a>
             <div class="card__description-wrapper">
               <a class="card__link" href="#">
                 Cat Energy PRO 500 г
@@ -138,11 +155,13 @@
             </a>
           </li>
           <li class="catalog__item card card--extended">
-            <div class="card__image-wrapper">
-              <a class="card__link-image" href="#">
-                <img class="card__image" src="img/cat-energy-pro-fish-xl.png" alt="Сat Energy Pro Fish 1000g.">
-              </a>
-            </div>
+            <a class="card__link-image" href="#">
+              <picture>
+                <source media="(min-width: 1440px)" srcset="img/cat-energy-pro-fish-xl-desktop.png, img/cat-energy-pro-fish-xl-desktop@2x.png 2x" width="169" height="210">
+                <source media="(min-width: 768px)" srcset="img/cat-energy-pro-fish-xl-tablet.png, img/cat-energy-pro-fish-xl-tablet@2x.png 2x" width="200" height="210">
+                <img class="card__image" src="img/cat-energy-pro-fish-xl.png" srcset="img/cat-energy-pro-fish-xl@2x.png 2x" width="140" height="107" alt="Сat Energy Pro Fish 1000g.">
+              </picture>
+            </a>
             <div class="card__description-wrapper">
               <a class="card__link" href="#">
                 Cat Energy PRO 1000 г
@@ -167,11 +186,13 @@
             </a>
           </li>
           <li class="catalog__item card card--extended">
-            <div class="card__image-wrapper">
-              <a class="card__link-image" href="#">
-                <img class="card__image" src="img/cat-energy-pro-buckwheat-xs.png" alt="Сat Energy Pro Buckwheat 500g.">
-              </a>
-            </div>
+            <a class="card__link-image" href="#">
+              <picture>
+                <source media="(min-width: 1440px)" srcset="img/cat-energy-pro-buckwheat-xs-desktop.png, img/cat-energy-pro-buckwheat-xs-desktop@2x.png 2x" width="169" height="210">
+                <source media="(min-width: 768px)" srcset="img/cat-energy-pro-buckwheat-xs-tablet.png, img/cat-energy-pro-buckwheat-xs-tablet@2x.png 2x" width="200" height="210">
+                <img class="card__image" src="img/cat-energy-pro-buckwheat-xs.png" srcset="img/cat-energy-pro-buckwheat-xs@2x.png 2x" width="140" height="107" alt="Сat Energy Pro Buckwheat 500g.">
+              </picture>
+            </a>
             <div class="card__description-wrapper">
               <a class="card__link" href="#">
                 Cat Energy Slim 500 г
@@ -196,11 +217,13 @@
             </a>
           </li>
           <li class="catalog__item card card--extended">
-            <div class="card__image-wrapper">
-              <a class="card__link-image" href="#">
-                <img class="card__image" src="img/cat-energy-pro-buckwheat-xl.png" alt="Сat Energy Pro Buckwheat 1000g.">
-              </a>
-            </div>
+            <a class="card__link-image" href="#">
+              <picture>
+                <source media="(min-width: 1440px)" srcset="img/cat-energy-pro-buckwheat-xl-desktop.png, img/cat-energy-pro-buckwheat-xl-desktop@2x.png 2x" width="169" height="210">
+                <source media="(min-width: 768px)" srcset="img/cat-energy-pro-buckwheat-xl-tablet.png, img/cat-energy-pro-buckwheat-xl-tablet@2x.png 2x" width="200" height="210">
+                <img class="card__image" src="img/cat-energy-pro-buckwheat-xl.png" srcset="img/cat-energy-pro-buckwheat-xl@2x.png 2x" width="140" height="107" alt="Сat Energy Pro Buckwheat 1000g.">
+              </picture>
+            </a>
             <div class="card__description-wrapper">
               <a class="card__link" href="#">
                 Cat Energy Slim 1000 г
@@ -225,11 +248,13 @@
             </a>
           </li>
           <li class="catalog__item card card--extended">
-            <div class="card__image-wrapper">
-              <a class="card__link-image" href="#">
-                <img class="card__image" src="img/cat-energy-pro-rice-xs.png" alt="Сat Energy Pro Rice 500g.">
-              </a>
-            </div>
+            <a class="card__link-image" href="#">
+              <picture>
+                <source media="(min-width: 1440px)" srcset="img/cat-energy-pro-rice-xs-desktop.png, img/cat-energy-pro-rice-xs-desktop@2x.png 2x" width="169" height="210">
+                <source media="(min-width: 768px)" srcset="img/cat-energy-pro-rice-xs-tablet.png, img/cat-energy-pro-rice-xs-tablet@2x.png 2x" width="200" height="210">
+                <img class="card__image" src="img/cat-energy-pro-rice-xs.png" srcset="img/cat-energy-pro-rice-xs@2x.png 2x" width="140" height="107" alt="Сat Energy Pro Rice 500g.">
+              </picture>
+            </a>
             <div class="card__description-wrapper">
               <a class="card__link" href="#">
                 Cat Energy Slim 500 г
@@ -332,19 +357,22 @@
       </div>
     </section>
 
-    <div class="event-invitation event-invitation--extended">
-      <p class="event-invitation__description">
-        Приглашаем к сотрудничеству дилеров!
-      </p>
-      <address class="event-invitation__address">
-        ул. Большая Конюшенная, д. 19/8 Санкт-Петербург
-      </address>
-    </div>
-
-    <section class="map">
+    <section class="page__map map">
       <h2 class="visually-hidden">Мы на карте.</h2>
+      <div class="event-invitation event-invitation--extended">
+        <p class="event-invitation__description">
+          Приглашаем к сотрудничеству дилеров!
+        </p>
+        <address class="event-invitation__address">
+          ул. Большая Конюшенная, д. 19/8 Санкт-Петербург
+        </address>
+      </div>
       <div class="map__wrapper">
-        <img class="map__image" src="img/map-location.png" width="320" height="362" alt="Мы на карте.">
+        <picture>
+          <source media="(min-width: 1440px)" srcset="img/map-location-desktop.png">
+          <source media="(min-width: 768px)" srcset="img/map-location-tablet.png">
+          <img class="map__image" src="img/map-location.png" width="320" height="362" alt="Мы на карте.">
+        </picture>
       </div>
     </section>
   </main>

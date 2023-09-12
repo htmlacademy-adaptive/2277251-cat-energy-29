@@ -7,14 +7,24 @@
   <title>Кэт энерджи: Главная</title>
   <link rel="stylesheet" href="css/style.css">
   <link rel="icon" type="image/png" sizes="32x32" href="img/favicon.png">
+  <link rel="apple-touch-icon" href="img/favicon-180.png">
+  <link rel="manifest" href="manifest.webmanifest">
 </head>
 
 <body class="page__body">
   <header class="main-header">
     <div class="main-header__wrapper container">
-      <a class="logo-main" href="index.html">
-        <img src="img/logo-cat-mobile.svg" width="33" height="38" alt="Логотип рыжего кота.">
-        <img src="img/logo-cat-energy.svg" width="101" height="18" alt="Логотип Cat Energy.">
+      <a class="main-header__logo-link logo-main" href="index.html">
+        <picture>
+          <source media="(min-width: 1440px)" srcset="img/logo-cat-desktop.svg" width="70" height="59">
+          <source media="(min-width: 768px)" srcset="img/logo-cat-tablet.svg" width="60" height="50">
+          <img src="img/logo-cat-mobile.svg" width="33" height="38" alt="Логотип рыжего кота.">
+        </picture>
+        <picture>
+          <source media="(min-width: 1440px)" srcset="img/logo-cat-energy-tablet.svg" width="118" height="21">
+          <source media="(min-width: 768px)" srcset="img/logo-cat-energy-tablet.svg">
+          <img class="logo-main__text" src="img/logo-cat-energy.svg" width="101" height="18" alt="Логотип Cat Energy.">
+        </picture>
       </a>
       <!-- Для показа открытого меню без JS - добавить для <nav> ниже класс main-nav--nojs -->
       <nav class="main-nav main-nav--closed">
@@ -53,7 +63,13 @@
         <p class="hero__description">
           Занялся собой? Займись котом!
         </p>
-        <img src="img/cat-energy-pro-chicken.png" alt="Cat energy Pro 500г с курицей.">
+        <div class="hero__img-wrapper">
+          <picture>
+            <source media="(min-width: 1440px)" srcset="img/cat-energy-pro-chicken-desktop.png 1x, img/cat-energy-pro-chicken-desktop@2x.png 2x">
+            <source media="(min-width: 768px)" srcset="img/cat-energy-pro-chicken-tablet.png 1x, img/cat-energy-pro-chicken-tablet@2x.png 2x">
+            <img class="hero__img" src="img/cat-energy-pro-chicken.png" srcset="img/cat-energy-pro-chicken@2x.png 2x" width="280" height="270" alt="Cat energy Pro 500г с курицей.">
+          </picture>
+        </div>
         <a class="hero__link button button--primary" href="form.html" target="_blank">
           Подобрать программу
         </a>
@@ -134,23 +150,31 @@
             <dd class="slider__value slider__value--price">15 000 руб.</dd>
           </div>
         </dl>
-        <img class="slider__image" src="img/slider-image.png" width="280" height="256" alt="Слайдер.">
+        <div class="slider__image-wrapper">
+          <picture>
+            <source media="(min-width: 768px)" srcset="img/slider-image-tablet.png 1x, img/slider-image-tablet@2x.png 2x" width="560" height="512">
+            <img class="slider__image" src="img/slider-image.png" srcset="img/slider-image@2x.png 2x" width="280" height="256" alt="Слайдер.">
+          </picture>
+        </div>
       </div>
     </section>
 
-    <div class="event-invitation">
-      <p class="event-invitation__description">
-        Приглашаем к сотрудничеству дилеров!
-      </p>
-      <address class="event-invitation__address">
-        ул. Большая Конюшенная, д. 19/8 Санкт-Петербург
-      </address>
-    </div>
-
     <section class="page__map map">
       <h2 class="visually-hidden">Мы на карте.</h2>
+      <div class="event-invitation">
+        <p class="event-invitation__description">
+          Приглашаем к сотрудничеству дилеров!
+        </p>
+        <address class="event-invitation__address">
+          ул. Большая Конюшенная, д. 19/8 Санкт-Петербург
+        </address>
+      </div>
       <div class="map__wrapper">
-        <img class="map__image" src="img/map-location.png" width="320" height="362" alt="Мы на карте.">
+        <picture>
+          <source media="(min-width: 1440px)" srcset="img/map-location-desktop.png">
+          <source media="(min-width: 768px)" srcset="img/map-location-tablet.png">
+          <img class="map__image" src="img/map-location.png" width="320" height="362" alt="Мы на карте.">
+        </picture>
       </div>
     </section>
   </main>

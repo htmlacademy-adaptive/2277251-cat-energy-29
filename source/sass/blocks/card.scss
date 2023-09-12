@@ -1,13 +1,5 @@
 @import "common/variables.scss";
 
-.card__image-wrapper {
-  max-width: 140px;
-
-  @media (min-width: $tablet-width) {
-    max-width: none;
-  }
-}
-
 .card__link-image {
   display: block;
   text-align: center;

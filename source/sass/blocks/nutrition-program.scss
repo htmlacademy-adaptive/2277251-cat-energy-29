@@ -31,3 +31,13 @@
     line-height: 30px;
   }
 }
+
+.nutrition-program__description-wrapper {
+  @media (min-width: $tablet-width) {
+    width: 628px;
+  }
+
+  @media (min-width: $desktop-width) {
+    width: 1220px;
+  }
+}

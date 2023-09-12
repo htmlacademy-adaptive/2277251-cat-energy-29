@@ -17,6 +17,10 @@
 .slider__wrapper {
   display: flex;
   flex-direction: column;
+
+  @media (min-width: $desktop-width) {
+    display: grid;
+  }
 }
 
 .slider__text {
@@ -78,11 +82,16 @@
   padding-top: 0;
 
   @media (min-width: $tablet-width) {
+    flex-direction: column;
+    align-items: end;
+    gap: 9px 0;
     grid-column: 3 / -1;
     margin-left: auto;
   }
 
   @media (min-width: $desktop-width) {
+    flex-direction: row;
+    align-items: normal;
     grid-column: 1 / 2;
     gap: 63px;
   }
@@ -154,7 +163,16 @@
   }
 
   @media (min-width: $desktop-width) {
-    min-width: 174px;
+    min-width: 182px;
+  }
+}
+
+.slider__image-wrapper {
+  text-align: center;
+
+  @media (min-width: $desktop-width) {
+    grid-column: 2 / 3;
+    grid-row: 1 / 5;
   }
 }
 
