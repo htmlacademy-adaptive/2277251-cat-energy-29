@@ -19,6 +19,10 @@
     font-size: 20px;
     line-height: normal;
   }
+
+  &:active {
+    opacity: 0.6;
+  }
 }
 
 .checkbox-list__field + .control__oultine::before {
@@ -51,4 +55,13 @@
     top: 14px;
     left: 12px;
   }
+}
+
+.checkbox-list__field:hover + .control__oultine::before {
+  border-color: #bababa;
+}
+
+.checkbox-list__field:disabled ~ .checkbox-list__text,
+.checkbox-list__field:disabled ~ .control__oultine {
+  opacity: 0.3;
 }
