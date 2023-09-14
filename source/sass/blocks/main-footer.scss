@@ -17,7 +17,7 @@
   }
 }
 
-.main-footer__logo {
+.main-footer__logo-wrapper {
   display: flex;
   align-items: center;
   justify-content: center;
@@ -27,6 +27,16 @@
   @media (min-width: $tablet-width) {
     padding-bottom: 0;
     border-bottom: none;
+  }
+}
+
+.main-footer__logo {
+  &:hover {
+    opacity: 0.8;
+  }
+
+  &:active {
+    opacity: 0.6;
   }
 }
 
