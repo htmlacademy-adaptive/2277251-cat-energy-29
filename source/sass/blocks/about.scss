@@ -68,25 +68,25 @@
 
   &--leaf {
     &::before {
-      background-image: url("../img/icon-leaf.svg");
+      background-image: url("../img/sprite.svg#icon-leaf");
     }
   }
 
   &--liquid {
     &::before {
-      background-image: url("../img/icon-liquid.svg");
+      background-image: url("../img/sprite.svg#icon-liquid");
     }
   }
 
   &--eat {
     &::before {
-      background-image: url("../img/icon-eat.svg");
+      background-image: url("../img/sprite.svg#icon-eat");
     }
   }
 
   &--time {
     &::before {
-      background-image: url("../img/icon-clock.svg");
+      background-image: url("../img/sprite.svg#icon-clock");
     }
   }
 
