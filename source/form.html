@@ -115,11 +115,18 @@
           <div class="nutrition-program-form__contacts-wrapper container">
             <label class="nutrition-program-form__label">
               E-mail:*
+              <!-- Для показа состояния ошибки у инпутов добавить для них класс field-invalid -->
               <input class="nutrition-program-form__field-email field" type="email" name="cat-owner-email" value="kuklachev@gmail.com" required>
+              <svg class="nutrition-program-form__icon" width="21" height="20">
+                <use href="img/sprite.svg#icon-field-mail"></use>
+              </svg>
             </label>
             <label class="nutrition-program-form__label">
               Телефон:*
               <input class="nutrition-program-form__field-phone field" type="tel" name="cat-owner-number" value="8 (960) 900-60-90" required>
+              <svg class="nutrition-program-form__icon" width="21" height="20">
+                <use href="img/sprite.svg#icon-field-phone"></use>
+              </svg>
             </label>
           </div>
         </div>
