@@ -35,6 +35,7 @@
 }
 
 .nutrition-program-form__label {
+  position: relative;
   display: flex;
   gap: 13px;
   align-items: center;
@@ -88,6 +89,32 @@
   @media (min-width: $desktop-width) {
     padding: 10px 40px 10px 20px;
   }
+}
+
+.nutrition-program-form__icon {
+  position: absolute;
+  top: 13px;
+  right: 12px;
+  stroke: #000000;
+
+  @media (min-width: $tablet-width) {
+    top: 16px;
+    right: 14px;
+  }
+
+  @media (min-width: $desktop-width) {
+    top: 16px;
+    right: 16px;
+  }
+}
+
+.nutrition-program-form__field-email:focus-visible ~ .nutrition-program-form__icon,
+.nutrition-program-form__field-phone:focus-visible ~ .nutrition-program-form__icon {
+  stroke: #68b738;
+}
+
+.field-invalid ~ .nutrition-program-form__icon {
+  stroke: #ff8282;
 }
 
 .nutrition-program-form__list {
