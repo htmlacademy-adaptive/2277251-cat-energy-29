@@ -257,6 +257,9 @@
     background-position: center;
 
     @media (min-width: $tablet-width) {
+      background-image: url("../img/sprite.svg#icon-plus-tablet");
+      width: 60px;
+      height: 60px;
       top: 50px;
       left: 132px;
     }
