@@ -28,9 +28,7 @@
       </a>
       <!-- Для показа открытого меню без JS - добавить для <nav> ниже класс main-nav--nojs -->
       <nav class="main-nav main-nav--closed">
-        <button class="main-nav__toggle" type="button">
-          <span class="visually-hidden">Открыть меню навигации</span>
-        </button>
+        <button class="main-nav__toggle" type="button" aria-label="Открыть меню навигации"></button>
         <div class="main-nav__wrapper">
           <ul class="main-nav__list site-list reset-list">
             <li class="site-list__item">
@@ -116,14 +114,14 @@
             <label class="nutrition-program-form__label">
               E-mail:*
               <!-- Для показа состояния ошибки у инпутов добавить для них класс field-invalid -->
-              <input class="nutrition-program-form__field-email field" type="email" name="cat-owner-email" value="kuklachev@gmail.com" required>
+              <input class="nutrition-program-form__field-email field" type="email" name="cat-owner-email" value="kuklachev@gmail.com" aria-label="Ваш email." required>
               <svg class="nutrition-program-form__icon" width="21" height="20">
                 <use href="img/sprite.svg#icon-field-mail"></use>
               </svg>
             </label>
             <label class="nutrition-program-form__label">
               Телефон:*
-              <input class="nutrition-program-form__field-phone field" type="tel" name="cat-owner-number" value="8 (960) 900-60-90" required>
+              <input class="nutrition-program-form__field-phone field" type="tel" name="cat-owner-number" aria-label="Ваш номер телефона." value="8 (960) 900-60-90" required>
               <svg class="nutrition-program-form__icon" width="21" height="20">
                 <use href="img/sprite.svg#icon-field-phone"></use>
               </svg>
@@ -238,7 +236,7 @@
         </ul>
       </div>
       <div class="main-footer__copyright copyright">
-        <a class="copyright__link" href="https://htmlacademy.ru/intensive/adaptive" target="_blank">
+        <a class="copyright__link" href="https://htmlacademy.ru/intensive/adaptive" target="_blank" aria-label="Сайт HTML Академии.">
           <p class="copyright__text">
             HTML Academy
           </p>
