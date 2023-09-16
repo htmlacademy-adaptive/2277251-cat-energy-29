@@ -93,7 +93,7 @@
     flex-direction: row;
     align-items: normal;
     grid-column: 1 / 2;
-    gap: 63px;
+    gap: 60px;
   }
 }
 
@@ -105,6 +105,7 @@
   font-size: 24px;
   font-weight: 400;
   line-height: 24px;
+  text-transform: uppercase;
 
   @media (min-width: $tablet-width) {
     font-size: 30px;
@@ -139,6 +140,8 @@
   line-height: 12px;
 
   @media (min-width: $tablet-width) {
+    max-width: 135px;
+    margin: 11px 0 -5px 0;
     font-size: 14px;
     line-height: 14px;
     background-color: #ffffff;

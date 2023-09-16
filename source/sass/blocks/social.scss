@@ -9,22 +9,22 @@
   display: block;
   width: 28px;
   height: 22px;
+}
 
-  &--vkontakte {
-    background-image: url("../img/icon-vkontakte.svg");
-    background-repeat: no-repeat;
-    background-position: center;
-  }
+.social__link-vkontakte-icon,
+.social__link-youtube-icon,
+.social__link-telegram-icon {
+  fill: #666666;
+}
 
-  &--youtube {
-    background-image: url("../img/icon-youtube.svg");
-    background-repeat: no-repeat;
-    background-position: center;
-  }
+.social__link-vkontakte-icon:hover,
+.social__link-youtube-icon:hover,
+.social__link-telegram-icon:hover {
+  fill: #68b738;
+}
 
-  &--telegram {
-    background-image: url("../img/icon-telegram.svg");
-    background-repeat: no-repeat;
-    background-position: center;
-  }
+.social__link-vkontakte-icon:active,
+.social__link-youtube-icon:active,
+.social__link-telegram-icon:active {
+  opacity: 0.3;
 }

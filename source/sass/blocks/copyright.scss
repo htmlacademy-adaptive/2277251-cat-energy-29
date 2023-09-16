@@ -16,4 +16,17 @@
     justify-content: flex-end;
     gap: 23px;
   }
+
+  &:hover .copyright__icon-html-academy {
+    fill: #68b738;
+  }
+
+  &:active {
+    opacity: 0.3;
+  }
+}
+
+.copyright__icon-html-academy {
+  align-self: center;
+  fill: #666666;
 }

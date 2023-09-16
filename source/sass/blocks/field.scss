@@ -19,10 +19,17 @@
   }
 
   &:focus-within {
+    outline: 1px solid #444444;
     border-color: #444444;
   }
 
   &:disabled {
+    outline: 1px solid #ff8282;
     border-color: #ff8282;
   }
+}
+
+.field-invalid {
+  border-color: #ff8282;
+  outline: 1px solid #ff8282;
 }
