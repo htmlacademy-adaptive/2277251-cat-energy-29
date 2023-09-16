@@ -35,9 +35,25 @@
 }
 
 .catalog__list {
+  position: relative;
   display: flex;
   flex-direction: column;
   flex-wrap: wrap;
+
+  &::before {
+    content: "";
+    position: absolute;
+    width: calc(100% + 40px);
+    height: 1px;
+    top: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    background-color: #ebebeb;
+
+    @media (min-width: $tablet-width) {
+      content: none;
+    }
+  }
 
   @media (min-width: $tablet-width) {
     gap: 60px;
@@ -50,12 +66,26 @@
 }
 
 .catalog__item {
+  position: relative;
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
   gap: 0 28px;
-  border-top: 1px solid #ebebeb;
-  border-bottom: 1px solid #ebebeb;
+
+  ::after {
+    content: "";
+    position: absolute;
+    width: calc(100% + 40px);
+    height: 1px;
+    bottom: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    background-color: #ebebeb;
+
+    @media (min-width: $tablet-width) {
+      content: none;
+    }
+  }
 
   @media (min-width: $tablet-width) {
     position: relative;
