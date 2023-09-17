@@ -72,6 +72,7 @@
 .main-nav__list {
   display: flex;
   flex-direction: column;
+  flex-wrap: wrap;
   border-bottom: 1px solid #e6e6e6;
   border-left: 1px solid #e6e6e6;
 
@@ -81,6 +82,11 @@
     justify-content: flex-end;
     gap: 33px;
     border: none;
+    max-width: 437px;
+  }
+
+  @media (min-width: $desktop-width) {
+    max-width: 478px;
   }
 }
 

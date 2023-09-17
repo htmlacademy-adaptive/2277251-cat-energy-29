@@ -1,6 +1,7 @@
 @import "common/variables.scss";
 
 .slider__title {
+  max-width: 375px;
   margin: 0 0 40px 0;
 
   @media (min-width: $tablet-width) {

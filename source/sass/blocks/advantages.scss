@@ -3,6 +3,7 @@
 .advantages__list {
   display: flex;
   flex-direction: column;
+  flex-wrap: wrap;
   gap: 20px;
 
   @media (min-width: $tablet-width) {
@@ -139,7 +140,8 @@
   position: relative;
   display: inline-block;
   min-width: 134px;
-  padding: 4px 0;
+  max-width: 220px;
+  padding: 4px 10px 4px 0;
   color: #000000;
   font-family: "Oswald", "Arial", sans-serif;
   font-size: 16px;
@@ -154,7 +156,7 @@
     width: 32px;
     height: 10px;
     top: 6px;
-    right: 0;
+    right: 8px;
     background-image: url("../img/sprite.svg#icon-arrow");
     background-repeat: no-repeat;
     background-position: right;
