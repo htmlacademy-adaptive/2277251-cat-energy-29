@@ -30,7 +30,7 @@
   }
 
   @media (min-width: $desktop-width) {
-    justify-content: space-between;
+    gap: 42px;
   }
 }
 
@@ -122,6 +122,7 @@
 }
 
 .nutrition-program-form__list-wrapper {
+  width: 100%;
   position: relative;
 
   &::before {
@@ -299,6 +300,7 @@
 
   @media (min-width: $desktop-width) {
     width: 1220px;
+    justify-content: space-between;
     flex-direction: row;
     margin-bottom: 70px;
   }
