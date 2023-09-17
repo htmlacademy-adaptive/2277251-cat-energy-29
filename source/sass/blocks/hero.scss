@@ -16,6 +16,11 @@
     background-color: #63a73a;
     z-index: -1;
 
+    @media (min-resolution: 2dppx) {
+      background-image: url("../img/cat-background@2x.png");
+      background-size: contain;
+    }
+
     @media (min-width: $tablet-width) {
       content: none;
     }
@@ -30,6 +35,10 @@
       background-repeat: no-repeat;
       background-position: bottom right;
       background-size: contain;
+
+      @media (min-resolution: 2dppx) {
+        background-image: url("../img/cat-background-desktop@2x.jpg");
+      }
     }
   }
 }
@@ -54,7 +63,7 @@
   margin: 0 0 25px 0;
   color: #ffffff;
   text-align: center;
-  font-family: "Oswald", sans-serif;
+  font-family: "Oswald", "Arial", sans-serif;
   font-size: 36px;
   font-weight: 400;
   line-height: 36px;
@@ -79,7 +88,7 @@
   margin: 0 0 29px 0;
   color: #ffffff;
   text-align: center;
-  font-family: "Oswald", sans-serif;
+  font-family: "Oswald", "Arial", sans-serif;
   font-size: 14px;
   font-weight: 400;
   line-height: 14px;
