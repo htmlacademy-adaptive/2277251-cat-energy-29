@@ -16,6 +16,11 @@
     background-color: #63a73a;
     z-index: -1;
 
+    @media (min-resolution: 2dppx) {
+      background-image: url("../img/cat-background@2x.png");
+      background-size: contain;
+    }
+
     @media (min-width: $tablet-width) {
       content: none;
     }
@@ -30,6 +35,10 @@
       background-repeat: no-repeat;
       background-position: bottom right;
       background-size: contain;
+
+      @media (min-resolution: 2dppx) {
+        background-image: url("../img/cat-background-desktop@2x.jpg");
+      }
     }
   }
 }
