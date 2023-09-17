@@ -8,14 +8,27 @@
   background-repeat: no-repeat;
   z-index: 1;
 
+  @media (min-resolution: 2dppx) {
+    background-image: url("../img/cover-for-cat@2x.jpg");
+    background-size: contain;
+  }
+
   @media (min-width: $tablet-width) {
     width: 100%;
     min-height: 200px;
     background-image: url("../img/cover-for-cat-tablet.jpg");
+
+    @media (min-resolution: 2dppx) {
+      background-image: url("../img/cover-for-cat-tablet@2x.jpg");
+    }
   }
 
   @media (min-width: $desktop-width) {
     background-image: url("../img/cover-for-cat-desktop.jpg");
+
+    @media (min-resolution: 2dppx) {
+      background-image: url("../img/cover-for-cat-desktop@2x.jpg");
+    }
   }
 
   &::before {
