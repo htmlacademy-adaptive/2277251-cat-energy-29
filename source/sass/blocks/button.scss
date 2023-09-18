@@ -37,5 +37,13 @@
     min-width: 280px;
     width: 100%;
     text-align: center;
+
+    &:hover {
+      background-color: #EbEbEb;
+    }
+
+    &:active {
+      opacity: 0.8;
+    }
   }
 }
