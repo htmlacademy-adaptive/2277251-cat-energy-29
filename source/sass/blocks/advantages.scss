@@ -105,6 +105,7 @@
   text-transform: uppercase;
 
   @media (min-width: $tablet-width) {
+    max-width: 340px;
     margin: 0 0 24px 0;
     font-size: 36px;
     line-height: 36px;
