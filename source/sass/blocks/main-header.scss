@@ -24,6 +24,8 @@
 }
 
 .main-header__logo-link {
+  align-self: self-start;
+
   @media (min-width: $tablet-width) {
     display: flex;
     align-items: center;
