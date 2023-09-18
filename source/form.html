@@ -67,21 +67,14 @@
       <form class="nutrition-program-form" action="https://echo.htmlacademy.ru/" method="get">
         <div class="nutrition-program-form__container container">
           <div class="nutrition-program-form__labels-wrapper">
-            <label class="nutrition-program-form__label">
-              Имя:*
+            <label class="nutrition-program-form__label" for="cat-name">Имя:*</label>
               <!-- Для показа состояния ошибки у инпутов добавить для них класс field-invalid -->
-              <input class="nutrition-program-form__field field" type="text" name="cat-name" value="Барсик" required>
-            </label>
-            <label class="nutrition-program-form__label">
-              Вес (кг):*
-              <input class="nutrition-program-form__field field" type="text" name="cat-weight" value="7" required>
-            </label>
-            <label class="nutrition-program-form__label">
-              Возраст (лет):
-              <input class="nutrition-program-form__field field" type="text" name="cat-age" value="7">
-            </label>
+              <input class="nutrition-program-form__field field field--name" type="text" name="cat-name" id="cat-name" value="Барсик" required>
+            <label class="nutrition-program-form__label" for="cat-weight">Вес (кг):*</label>
+              <input class="nutrition-program-form__field field field--weight" type="text" name="cat-weight" id="cat-weight" value="7" required>
+            <label class="nutrition-program-form__label" for="cat-age">Возраст (лет):</label>
+              <input class="nutrition-program-form__field field field--age" type="text" name="cat-age" id="cat-age" value="7">
           </div>
-
           <div class="nutrition-program-form__list-wrapper">
             <ul class="nutrition-program-form__list radio-list reset-list">
               <li class="radio-list__item">
@@ -114,21 +107,21 @@
             <h2 class="nutrition-program-form__group-title">Контактные данные (владельца кота)</h2>
           </div>
           <div class="nutrition-program-form__contacts-wrapper container">
-            <label class="nutrition-program-form__label">
-              E-mail:*
-              <!-- Для показа состояния ошибки у инпутов добавить для них класс field-invalid -->
-              <input class="nutrition-program-form__field-email field" type="email" name="cat-owner-email" value="kuklachev@gmail.com" aria-label="Ваш email." required>
-              <svg class="nutrition-program-form__icon" width="21" height="20">
-                <use href="img/sprite.svg#icon-field-mail"></use>
-              </svg>
-            </label>
-            <label class="nutrition-program-form__label">
-              Телефон:*
-              <input class="nutrition-program-form__field-phone field" type="tel" name="cat-owner-number" aria-label="Ваш номер телефона." value="8 (960) 900-60-90" required>
-              <svg class="nutrition-program-form__icon" width="21" height="20">
-                <use href="img/sprite.svg#icon-field-phone"></use>
-              </svg>
-            </label>
+            <div class="nutrition-program-form__label-icon-wrapper">
+              <label class="nutrition-program-form__label" for="cat-owner-email">E-mail:*</label>
+                <!-- Для показа состояния ошибки у инпутов добавить для них класс field-invalid -->
+                <input class="nutrition-program-form__field-email field field--email" type="email" name="cat-owner-email" id="cat-owner-email" value="kuklachev@gmail.com" aria-label="Ваш email." required>
+                <svg class="nutrition-program-form__icon" width="21" height="20">
+                  <use href="img/sprite.svg#icon-field-mail"></use>
+                </svg>
+            </div>
+            <div class="nutrition-program-form__label-icon-wrapper">
+              <label class="nutrition-program-form__label" for="cat-owner-number">Телефон:*</label>
+                <input class="nutrition-program-form__field-phone field field--phone" type="tel" name="cat-owner-number" id="cat-owner-number" aria-label="Ваш номер телефона." value="8 (960) 900-60-90" required>
+                <svg class="nutrition-program-form__icon" width="21" height="20">
+                  <use href="img/sprite.svg#icon-field-phone"></use>
+                </svg>
+            </div>
           </div>
         </div>
 
