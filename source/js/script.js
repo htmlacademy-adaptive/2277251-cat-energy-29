@@ -14,10 +14,10 @@ navToggle.addEventListener('click', function () {
   }
 });
 
-let navNoJs = document.querySelector('.main-nav--nojs');
+let navNoJs = document.querySelector('.main-nav--no-js');
 let mainNavList = document.querySelector('.main-nav__list');
 
-if (navMain.classList.contains('main-nav--nojs')) {
+if (navMain.classList.contains('main-nav--no-js')) {
   navMainWrapper.style.display = "block";
   navToggle.style.display = "none";
 }

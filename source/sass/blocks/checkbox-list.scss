@@ -65,3 +65,8 @@
 .checkbox-list__field:disabled ~ .checkbox-list__control-outline {
   opacity: 0.3;
 }
+
+.checkbox-list__field:focus-visible + .checkbox-list__control-outline {
+  outline: 2px solid #000000;
+  outline-offset: 2px;
+}

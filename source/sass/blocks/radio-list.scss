@@ -76,3 +76,8 @@
 .radio-list__field:disabled ~ .radio-list__control-outline {
   opacity: 0.3;
 }
+
+.radio-list__field:focus-visible + .radio-list__control-outline {
+  outline: 2px solid #000000;
+  outline-offset: 2px;
+}

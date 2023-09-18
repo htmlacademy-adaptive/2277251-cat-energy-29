@@ -28,23 +28,23 @@
           <img class="logo-main__text" src="img/logo-cat-energy.svg" width="101" height="18" alt="Логотип Cat Energy.">
         </picture>
       </a>
-      <!-- Для показа открытого меню без JS - добавить для <nav> ниже класс main-nav--nojs -->
+      <!-- Для показа открытого меню без JS - добавить для <nav> ниже класс main-nav--no-js -->
       <nav class="main-nav main-nav--closed">
         <button class="main-nav__toggle" type="button" aria-label="Открыть меню навигации"></button>
         <div class="main-nav__wrapper">
           <ul class="main-nav__list site-list reset-list">
             <li class="site-list__item">
-              <a class="site-list__link site-list__link--extended" href="index.html">
+              <a class="site-list__link main-nav__link site-list__link--extended" href="index.html">
                 Главная
               </a>
             </li>
             <li class="site-list__item">
-              <a class="site-list__link site-list__link--extended" href="catalog.html">
+              <a class="site-list__link main-nav__link site-list__link--extended" href="catalog.html">
                 Каталог продукции
               </a>
             </li>
             <li class="site-list__item site-list__item--current">
-              <a class="site-list__link site-list__link--extended" href="form.html">
+              <a class="site-list__link main-nav__link site-list__link--extended" href="form.html">
                 Подбор программы
               </a>
             </li>
@@ -109,7 +109,7 @@
           <div class="nutrition-program-form__contacts-wrapper container">
             <div class="nutrition-program-form__label-icon-wrapper">
               <label class="nutrition-program-form__label" for="cat-owner-email">E-mail:*</label>
-                <!-- Для показа состояния ошибки у инпутов добавить для них класс field-invalid -->
+                <!-- Для показа состояния ошибки у инпутов с иконками добавить для них класс nutrition-program-form__field-invalid -->
                 <input class="nutrition-program-form__field-email field field--email" type="email" name="cat-owner-email" id="cat-owner-email" value="kuklachev@gmail.com" aria-label="Ваш email." required>
                 <svg class="nutrition-program-form__icon" width="21" height="20">
                   <use href="img/sprite.svg#icon-field-mail"></use>
