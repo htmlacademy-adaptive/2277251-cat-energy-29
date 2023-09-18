@@ -2,6 +2,16 @@
 
 .checkbox-list {
   border: none;
+  padding: 0 0 34px 0;
+
+  @media (min-width: $tablet-width) {
+    gap: 32px 114px;
+    padding: 0 0 52px 0;
+  }
+
+  @media (min-width: $desktop-width) {
+    padding: 0 0 60px 0;
+  }
 }
 
 .checkbox-list__control {
