@@ -27,6 +27,66 @@
     outline: 1px solid #ff8282;
     border-color: #ff8282;
   }
+
+  &--name {
+    width: 228px;
+
+    @media (min-width: $tablet-width) {
+      width: 568px;
+    }
+
+    @media (min-width: $desktop-width) {
+      width: 510px;
+    }
+  }
+
+  &--weight {
+    width: 206px;
+
+    @media (min-width: $tablet-width) {
+      width: 540px;
+    }
+
+    @media (min-width: $desktop-width) {
+      width: 482px;
+    }
+  }
+
+  &--age {
+    width: 173px;
+
+    @media (min-width: $tablet-width) {
+      width: 498px;
+    }
+
+    @media (min-width: $desktop-width) {
+      width: 440px;
+    }
+  }
+
+  &--email {
+    width: 217px;
+
+    @media (min-width: $tablet-width) {
+      width: 552px;
+    }
+
+    @media (min-width: $desktop-width) {
+      width: 494px;
+    }
+  }
+
+  &--phone {
+    width: 200px;
+
+    @media (min-width: $tablet-width) {
+      width: 530px;
+    }
+
+    @media (min-width: $desktop-width) {
+      width: 472px;
+    }
+  }
 }
 
 .field-invalid {

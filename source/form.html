@@ -9,8 +9,8 @@
   <link rel="icon" type="image/png" sizes="32x32" href="img/favicon.png">
   <link rel="apple-touch-icon" href="img/favicon-180.png">
   <link rel="manifest" href="manifest.webmanifest">
-  <link rel="preload" href="fonts/Lato-Regular.woff2" as="font" type="font/woff2">
-  <link rel="preload" href="fonts/oswaldregular.woff2" as="font" type="font/woff2">
+  <link rel="preload" href="fonts/Lato-Regular.woff2" as="font" type="font/woff2" crossorigin="anonymous">
+  <link rel="preload" href="fonts/oswaldregular.woff2" as="font" type="font/woff2" crossorigin="anonymous">
 </head>
 
 <body class="page__body">
@@ -67,41 +67,34 @@
       <form class="nutrition-program-form" action="https://echo.htmlacademy.ru/" method="get">
         <div class="nutrition-program-form__container container">
           <div class="nutrition-program-form__labels-wrapper">
-            <label class="nutrition-program-form__label">
-              Имя:*
+            <label class="nutrition-program-form__label" for="cat-name">Имя:*</label>
               <!-- Для показа состояния ошибки у инпутов добавить для них класс field-invalid -->
-              <input class="nutrition-program-form__field field" type="text" name="cat-name" value="Барсик" required>
-            </label>
-            <label class="nutrition-program-form__label">
-              Вес (кг):*
-              <input class="nutrition-program-form__field field" type="text" name="cat-weight" value="7" required>
-            </label>
-            <label class="nutrition-program-form__label">
-              Возраст (лет):
-              <input class="nutrition-program-form__field field" type="text" name="cat-age" value="7">
-            </label>
+              <input class="nutrition-program-form__field field field--name" type="text" name="cat-name" id="cat-name" value="Барсик" required>
+            <label class="nutrition-program-form__label" for="cat-weight">Вес (кг):*</label>
+              <input class="nutrition-program-form__field field field--weight" type="text" name="cat-weight" id="cat-weight" value="7" required>
+            <label class="nutrition-program-form__label" for="cat-age">Возраст (лет):</label>
+              <input class="nutrition-program-form__field field field--age" type="text" name="cat-age" id="cat-age" value="7">
           </div>
-
           <div class="nutrition-program-form__list-wrapper">
             <ul class="nutrition-program-form__list radio-list reset-list">
               <li class="radio-list__item">
                 <label class="radio-list__control control">
                   <input class="radio-list__field field visually-hidden" type="radio" name="target" value="weight-loss" required checked>
-                  <span class="control__oultine"></span>
+                  <span class="control__outline"></span>
                   <span class="radio-list__text">Похудение</span>
                 </label>
               </li>
               <li class="radio-list__item">
                 <label class="radio-list__control control">
                   <input class="radio-list__field field visually-hidden" type="radio" name="target" value="mass-gain">
-                  <span class="control__oultine"></span>
+                  <span class="control__outline"></span>
                   <span class="radio-list__text">Набор массы</span>
                 </label>
               </li>
               <li class="radio-list__item">
                 <label class="radio-list__control control">
                   <input class="radio-list__field field visually-hidden" type="radio" name="target" value="needs-advice">
-                  <span class="control__oultine"></span>
+                  <span class="control__outline"></span>
                   <span class="radio-list__text">Не знаю (Нужен ваш совет)</span>
                 </label>
               </li>
@@ -114,21 +107,21 @@
             <h2 class="nutrition-program-form__group-title">Контактные данные (владельца кота)</h2>
           </div>
           <div class="nutrition-program-form__contacts-wrapper container">
-            <label class="nutrition-program-form__label">
-              E-mail:*
-              <!-- Для показа состояния ошибки у инпутов добавить для них класс field-invalid -->
-              <input class="nutrition-program-form__field-email field" type="email" name="cat-owner-email" value="kuklachev@gmail.com" aria-label="Ваш email." required>
-              <svg class="nutrition-program-form__icon" width="21" height="20">
-                <use href="img/sprite.svg#icon-field-mail"></use>
-              </svg>
-            </label>
-            <label class="nutrition-program-form__label">
-              Телефон:*
-              <input class="nutrition-program-form__field-phone field" type="tel" name="cat-owner-number" aria-label="Ваш номер телефона." value="8 (960) 900-60-90" required>
-              <svg class="nutrition-program-form__icon" width="21" height="20">
-                <use href="img/sprite.svg#icon-field-phone"></use>
-              </svg>
-            </label>
+            <div class="nutrition-program-form__label-icon-wrapper">
+              <label class="nutrition-program-form__label" for="cat-owner-email">E-mail:*</label>
+                <!-- Для показа состояния ошибки у инпутов добавить для них класс field-invalid -->
+                <input class="nutrition-program-form__field-email field field--email" type="email" name="cat-owner-email" id="cat-owner-email" value="kuklachev@gmail.com" aria-label="Ваш email." required>
+                <svg class="nutrition-program-form__icon" width="21" height="20">
+                  <use href="img/sprite.svg#icon-field-mail"></use>
+                </svg>
+            </div>
+            <div class="nutrition-program-form__label-icon-wrapper">
+              <label class="nutrition-program-form__label" for="cat-owner-number">Телефон:*</label>
+                <input class="nutrition-program-form__field-phone field field--phone" type="tel" name="cat-owner-number" id="cat-owner-number" aria-label="Ваш номер телефона." value="8 (960) 900-60-90" required>
+                <svg class="nutrition-program-form__icon" width="21" height="20">
+                  <use href="img/sprite.svg#icon-field-phone"></use>
+                </svg>
+            </div>
           </div>
         </div>
 
@@ -151,28 +144,28 @@
               <li class="checkbox-list__item">
                 <label class="checkbox-list__control control">
                   <input class="checkbox-list__field field visually-hidden" type="checkbox" name="product-sweetener" value="add" checked>
-                  <span class="control__oultine"></span>
+                  <span class="control__outline"></span>
                   <span class="checkbox-list__text">Сахарозаменитель</span>
                 </label>
               </li>
               <li class="checkbox-list__item">
                 <label class="checkbox-list__control control">
                   <input class="checkbox-list__field field visually-hidden" type="checkbox" name="product-drinking-water" value="add">
-                  <span class="control__oultine"></span>
+                  <span class="control__outline"></span>
                   <span class="checkbox-list__text">Питьевая вода</span>
                 </label>
               </li>
               <li class="checkbox-list__item">
                 <label class="checkbox-list__control control">
                   <input class="checkbox-list__field field visually-hidden" type="checkbox" name="product-milk" value="add">
-                  <span class="control__oultine"></span>
+                  <span class="control__outline"></span>
                   <span class="checkbox-list__text">Молоко</span>
                 </label>
               </li>
               <li class="checkbox-list__item">
                 <label class="checkbox-list__control control">
                   <input class="checkbox-list__field field visually-hidden" type="checkbox" name="product-vitamins" value="add">
-                  <span class="control__oultine"></span>
+                  <span class="control__outline"></span>
                   <span class="checkbox-list__text">Витамины</span>
                 </label>
               </li>
@@ -198,9 +191,9 @@
       </div>
       <div class="map__wrapper">
         <picture>
-          <source media="(min-width: 1440px)" srcset="img/map-location-desktop.png">
-          <source media="(min-width: 768px)" srcset="img/map-location-tablet.png">
-          <img class="map__image" src="img/map-location.png" width="320" height="362" alt="Мы на карте.">
+          <source media="(min-width: 1440px)" srcset="img/map-location-desktop.jpg">
+          <source media="(min-width: 768px)" srcset="img/map-location-tablet.jpg">
+          <img class="map__image" src="img/map-location.jpg" width="320" height="362" alt="Мы на карте.">
         </picture>
       </div>
     </section>

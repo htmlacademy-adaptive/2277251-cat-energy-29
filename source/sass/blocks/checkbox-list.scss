@@ -25,7 +25,7 @@
   }
 }
 
-.checkbox-list__field + .control__oultine::before {
+.checkbox-list__field + .control__outline::before {
   content: "";
   position: absolute;
   width: 30px;
@@ -40,7 +40,7 @@
   }
 }
 
-.checkbox-list__field:checked + .control__oultine::after {
+.checkbox-list__field:checked + .control__outline::after {
   content: "";
   position: absolute;
   width: 18px;
@@ -57,11 +57,11 @@
   }
 }
 
-.checkbox-list__field:hover + .control__oultine::before {
+.checkbox-list__field:hover + .control__outline::before {
   border-color: #bababa;
 }
 
 .checkbox-list__field:disabled ~ .checkbox-list__text,
-.checkbox-list__field:disabled ~ .control__oultine {
+.checkbox-list__field:disabled ~ .control__outline {
   opacity: 0.3;
 }
