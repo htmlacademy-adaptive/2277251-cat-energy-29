@@ -34,7 +34,7 @@
   }
 }
 
-.radio-list__field + .control__outline::before {
+.radio-list__field + .radio-list__control-outline::before {
   content: "";
   position: absolute;
   width: 30px;
@@ -50,7 +50,7 @@
   }
 }
 
-.radio-list__field:checked + .control__outline::after {
+.radio-list__field:checked + .radio-list__control-outline::after {
   content: "";
   position: absolute;
   width: 13px;
@@ -68,11 +68,16 @@
   }
 }
 
-.radio-list__field:hover + .control__outline::before {
+.radio-list__field:hover + .radio-list__control-outline::before {
   border-color: #bababa;
 }
 
 .radio-list__field:disabled ~ .radio-list__text,
-.radio-list__field:disabled ~ .control__outline {
+.radio-list__field:disabled ~ .radio-list__control-outline {
   opacity: 0.3;
+}
+
+.radio-list__field:focus-visible + .radio-list__control-outline {
+  outline: 2px solid #000000;
+  outline-offset: 2px;
 }
