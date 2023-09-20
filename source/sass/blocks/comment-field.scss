@@ -11,6 +11,10 @@
     padding: 11px 20px;
     max-height: 175px;
   }
+
+  @media (min-width: $desktop-width) {
+    padding: 9px 20px;
+  }
 }
 
 .comment-field::placeholder {
