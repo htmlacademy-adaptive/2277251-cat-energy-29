@@ -11,7 +11,7 @@
   }
 
   @media (min-width: $desktop-width) {
-    margin: 0 0 146px 0;
+    margin: 0 0 138px 0;
   }
 }
 
@@ -96,7 +96,7 @@
       flex-direction: row;
       align-items: normal;
       grid-column: 1 / 2;
-      gap: 60px;
+      gap: 50px;
     }
   }
 }
@@ -180,6 +180,7 @@
   @media (min-width: $desktop-width) {
     grid-column: 2 / 3;
     grid-row: 1 / 5;
+    transform: translateX(56px);
   }
 }
 

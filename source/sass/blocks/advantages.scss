@@ -112,7 +112,7 @@
   }
 
   @media (min-width: $desktop-width) {
-    margin: 41px 0 73px 162px;
+    margin: 36px 0 73px 162px;
     font-size: 36px;
     line-height: 36px;
   }
@@ -139,7 +139,8 @@
   }
 
   @media (min-width: $desktop-width) {
-    margin: 0 0 27px 0;
+    max-width: 457px;
+    margin: 0 0 22px 0;
   }
 }
 
