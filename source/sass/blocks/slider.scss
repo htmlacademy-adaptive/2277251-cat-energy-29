@@ -54,6 +54,7 @@
   @media (min-width: $tablet-width) {
     grid-template-columns: 162px 162px 1fr;
     gap: 42px;
+    margin: 0 0 100px;
   }
 
   @media (min-width: $desktop-width) {

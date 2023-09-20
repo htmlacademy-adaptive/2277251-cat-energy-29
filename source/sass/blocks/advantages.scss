@@ -22,7 +22,7 @@
   padding: 20px 33px 18px 20px;
 
   @media (min-width: $tablet-width) {
-    padding: 80px 52px 52px 52px;
+    padding: 75px 52px 60px 52px;
   }
 
   @media (min-width: $desktop-width) {
@@ -135,7 +135,7 @@
     color: #000000;
     border-bottom: none;
     padding-bottom: 0;
-    margin: 0 0 48px 0;
+    margin: 0 0 42px 0;
   }
 
   @media (min-width: $desktop-width) {
@@ -156,6 +156,12 @@
   line-height: 16px;
   text-transform: uppercase;
 
+  @media (min-width: $tablet-width) {
+    min-width: 165px;
+    font-size: 20px;
+    line-height: normal;
+  }
+
   &::after {
     content: "";
     position: absolute;
@@ -167,6 +173,11 @@
     background-image: url("../img/sprite.svg#icon-arrow");
     background-repeat: no-repeat;
     background-position: right;
+
+    @media (min-width: $tablet-width) {
+      top: 14px;
+      right: 6px;
+    }
   }
 
   &:hover::after {
