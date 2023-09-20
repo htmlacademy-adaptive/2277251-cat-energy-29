@@ -23,7 +23,7 @@
 .page__hero {
   margin-bottom: 20px;
 
-  @media (min-width: $desktop-width) {
+  @media (min-width: $tablet-width) {
     margin-bottom: 0;
   }
 }
@@ -36,7 +36,7 @@
   }
 
   @media (min-width: $desktop-width) {
-    margin-bottom: 70px;
+    transform: translateY(-35px);
   }
 }
 

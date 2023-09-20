@@ -5,12 +5,38 @@
   padding: 0 0 34px 0;
 
   @media (min-width: $tablet-width) {
-    gap: 32px 114px;
+    gap: 32px 60px;
     padding: 0 0 52px 0;
   }
 
   @media (min-width: $desktop-width) {
     padding: 0 0 60px 0;
+    justify-content: normal;
+    gap: 20px 0;
+  }
+}
+
+.checkbox-list__item {
+  @media (min-width: $desktop-width) {
+    margin-right: 50px;
+  }
+}
+
+.checkbox-list__item:nth-child(1) {
+  @media (min-width: $desktop-width) {
+    margin-right: 104px;
+  }
+}
+
+.checkbox-list__item:nth-child(2) {
+  @media (min-width: $desktop-width) {
+    margin-right: 136px;
+  }
+}
+
+.checkbox-list__item:nth-child(3) {
+  @media (min-width: $desktop-width) {
+    margin-right: 197px;
   }
 }
 

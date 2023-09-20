@@ -8,6 +8,12 @@
   @media (min-width: $tablet-width) {
     font-size: 20px;
     line-height: 30px;
+    padding: 11px 20px;
+    max-height: 175px;
+  }
+
+  @media (min-width: $desktop-width) {
+    padding: 9px 20px;
   }
 }
 

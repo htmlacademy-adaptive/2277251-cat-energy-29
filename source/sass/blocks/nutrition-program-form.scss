@@ -9,7 +9,7 @@
   @media (min-width: $tablet-width) {
     width: 628px;
     gap: 72px;
-    margin-bottom: 65px;
+    margin-bottom: 58px;
   }
 
   @media (min-width: $desktop-width) {
@@ -17,7 +17,7 @@
     display: grid;
     grid-template-columns: 570px 570px;
     gap: 80px;
-    margin-bottom: 70px;
+    margin-bottom: 64px;
   }
 }
 
@@ -57,7 +57,7 @@
 .nutrition-program-form__field {
   border: 1px solid #e7e7e7;
   width: 100%;
-  padding: 14px 15px 13px 15px;
+  padding: 12px 15px 12px 15px;
   flex-grow: 1;
 
   @media (min-width: $tablet-width) {
@@ -243,39 +243,54 @@
     line-height: 36px;
     margin: 0 0 76px 0;
   }
+
+  @media (min-width: $desktop-width) {
+    margin: 0 0 74px 0;
+  }
+}
+
+.nutrition-program-form__group-title--additional {
+  margin-bottom: 57px;
+
+  @media (min-width: $desktop-width) {
+    margin-bottom: 54px;
+  }
 }
 
 .nutrition-program-form__list-container {
   @media (min-width: $tablet-width) {
     width: 628px;
     display: grid;
-    grid-template-columns: 1fr 1fr;
+    grid-template-columns: 284px 284px;
     margin-bottom: 60px;
     grid-column: 1 / 4;
   }
 
   @media (min-width: $desktop-width) {
+    grid-template-columns: 570px 570px;
     width: 1220px;
+    margin-bottom: 80px;
   }
 }
 
 .nutrition-program-form__comment-field-container {
-  margin-bottom: 24px;
+  margin-bottom: 17px;
 
   @media (min-width: $tablet-width) {
     width: 628px;
+    margin-top: 8px;
     margin-bottom: 65px;
   }
 
   @media (min-width: $desktop-width) {
     width: 1220px;
-    margin-bottom: 70px;
+    margin-bottom: 65px;
   }
 }
 
 .nutrition-program-form__text-required-fields {
   display: block;
-  margin: 20px 0;
+  margin: 20px 0 32px 0;
   text-align: center;
   color: #000000;
   font-family: "Lato", "Tahoma", sans-serif;
@@ -285,7 +300,7 @@
 
   @media (min-width: $tablet-width) {
     font-size: 16px;
-    margin-left: 60px;
+    margin: 15px 0 0 60px;
     text-align: start;
   }
 
@@ -316,4 +331,8 @@
 
 .nutrition-program-form__button {
   grid-column: 1 / 2;
+
+  @media (min-width: $desktop-width) {
+    padding: 14px;
+  }
 }

@@ -17,6 +17,7 @@
     top: 95px;
     left: 110px;
     background-color: #ffffff;
+    padding: 60px 80px;
   }
 
   &--extended {
@@ -54,5 +55,10 @@
   @media (min-width: $tablet-width) {
     font-size: 16px;
     text-align: end;
+  }
+
+  @media (min-width: $desktop-width) {
+    font-size: 16px;
+    text-align: start;
   }
 }
