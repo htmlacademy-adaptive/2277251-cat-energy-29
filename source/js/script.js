@@ -26,19 +26,38 @@ if (navMain.classList.contains('main-nav--no-js')) {
 
 /* Карта */
 
+let screenWidth = window.screen.width;
 let center = [59.93861491380169,30.323047228835982];
+let pinSize;
+let pinOffset;
+let zoom = 14;
+
+if (screenWidth < 768) {
+  pinSize = [57, 53];
+} else {
+  pinSize = [113, 106];
+};
+
+if (screenWidth >= 768) {
+  pinOffset = [-55, -95];
+  zoom = 15;
+};
+
+if (screenWidth >= 1440) {
+  zoom = 16;
+}
 
 function init() {
   let map = new ymaps.Map('map', {
     center: center,
-    zoom: 15
+    zoom: zoom
   });
 
   let placemark = new ymaps.Placemark(center, {}, {
     iconLayout: 'default#image',
-    iconImageHref: '',
-    iconImageSize: [57, 53],
-    iconImageOffset: [1, 1]
+    iconImageHref: 'img/map-pin.svg',
+    iconImageSize: pinSize,
+    iconImageOffset: pinOffset
   });
 
   map.controls.remove("geolocationControl");
