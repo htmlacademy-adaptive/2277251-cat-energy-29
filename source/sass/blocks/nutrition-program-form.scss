@@ -57,7 +57,7 @@
 .nutrition-program-form__field {
   border: 1px solid #e7e7e7;
   width: 100%;
-  padding: 14px 15px 13px 15px;
+  padding: 12px 15px 12px 15px;
   flex-grow: 1;
 
   @media (min-width: $tablet-width) {
@@ -260,7 +260,7 @@
 }
 
 .nutrition-program-form__comment-field-container {
-  margin-bottom: 24px;
+  margin-bottom: 17px;
 
   @media (min-width: $tablet-width) {
     width: 628px;
@@ -275,7 +275,7 @@
 
 .nutrition-program-form__text-required-fields {
   display: block;
-  margin: 20px 0;
+  margin: 20px 0 32px 0;
   text-align: center;
   color: #000000;
   font-family: "Lato", "Tahoma", sans-serif;
@@ -285,7 +285,7 @@
 
   @media (min-width: $tablet-width) {
     font-size: 16px;
-    margin-left: 60px;
+    margin: 15px 0 0 60px;
     text-align: start;
   }
 
