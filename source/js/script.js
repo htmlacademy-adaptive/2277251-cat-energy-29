@@ -27,10 +27,15 @@ if (navMain.classList.contains('main-nav--no-js')) {
 /* Карта */
 
 let screenWidth = window.screen.width;
+let mapWrapper = document.querySelector('.map__wrapper');
+let mapImage = document.querySelector('.map__image');
 let center = [59.93861491380169,30.323047228835982];
 let pinSize;
 let pinOffset;
 let zoom = 14;
+
+mapWrapper.classList.remove('map__wrapper--no-js');
+mapImage.classList.remove('map__image--no-js');
 
 if (screenWidth < 768) {
   pinSize = [57, 53];
