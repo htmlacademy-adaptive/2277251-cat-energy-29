@@ -26,10 +26,19 @@ if (navMain.classList.contains('main-nav--no-js')) {
 
 /* Карта */
 
+let center = [59.93861491380169,30.323047228835982];
+
 function init() {
   let map = new ymaps.Map('map', {
-    center: [59.93861491380169,30.323047228835982],
+    center: center,
     zoom: 15
+  });
+
+  let placemark = new ymaps.Placemark(center, {}, {
+    iconLayout: 'default#image',
+    iconImageHref: '',
+    iconImageSize: [57, 53],
+    iconImageOffset: [1, 1]
   });
 
   map.controls.remove("geolocationControl");
