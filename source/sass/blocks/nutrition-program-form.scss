@@ -9,7 +9,7 @@
   @media (min-width: $tablet-width) {
     width: 628px;
     gap: 72px;
-    margin-bottom: 65px;
+    margin-bottom: 58px;
   }
 
   @media (min-width: $desktop-width) {
@@ -245,16 +245,21 @@
   }
 }
 
+.nutrition-program-form__group-title--additional {
+  margin-bottom: 57px;
+}
+
 .nutrition-program-form__list-container {
   @media (min-width: $tablet-width) {
     width: 628px;
     display: grid;
-    grid-template-columns: 1fr 1fr;
+    grid-template-columns: 284px 284px;
     margin-bottom: 60px;
     grid-column: 1 / 4;
   }
 
   @media (min-width: $desktop-width) {
+    grid-template-columns: 570px 570px;
     width: 1220px;
   }
 }
@@ -264,6 +269,7 @@
 
   @media (min-width: $tablet-width) {
     width: 628px;
+    margin-top: 8px;
     margin-bottom: 65px;
   }
 
