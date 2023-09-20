@@ -8,7 +8,7 @@
   }
 
   @media (min-width: $desktop-width) {
-    margin-bottom: 76px;
+    margin-bottom: 86px;
   }
 }
 
@@ -68,7 +68,7 @@
   }
 
   @media (min-width: $desktop-width) {
-    gap: 80px;
+    gap: 62px 80px;
   }
 }
 
@@ -176,6 +176,10 @@
 
   @media (min-width: $tablet-width) {
     gap: 40px;
+  }
+
+  @media (min-width: $desktop-width) {
+    margin-bottom: 42px;
   }
 }
 
@@ -318,7 +322,7 @@
     display: flex;
     flex-direction: column;
     justify-content: end;
-    min-height: 459px;
+    min-height: 438px;
     margin-top: auto;
     padding: 50px 20px 40px 20px;
     background-color: #ffffff;
