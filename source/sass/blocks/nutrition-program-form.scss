@@ -250,7 +250,11 @@
 }
 
 .nutrition-program-form__group-title--additional {
-  margin-bottom: 57px;
+  margin-bottom: 33px;
+
+  @media (min-width: $tablet-width) {
+    margin-bottom: 57px;
+  }
 
   @media (min-width: $desktop-width) {
     margin-bottom: 54px;

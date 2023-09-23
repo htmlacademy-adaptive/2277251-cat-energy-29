@@ -11,10 +11,12 @@
 .copyright__link {
   display: flex;
   justify-content: space-between;
+  padding: 10px 0;
 
   @media (min-width: $tablet-width) {
     justify-content: flex-end;
     gap: 23px;
+    padding: 0;
   }
 
   &:hover .copyright__icon-html-academy {
