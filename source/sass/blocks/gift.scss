@@ -58,6 +58,11 @@
     background-repeat: no-repeat;
     background-position: center;
 
+    @media (min-width: $tablet-width) {
+      top: 56px;
+      left: 80px;
+    }
+
     @media (min-width: $desktop-width) {
       top: 56px;
       left: 83px;
