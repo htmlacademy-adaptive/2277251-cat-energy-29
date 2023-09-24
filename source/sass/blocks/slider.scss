@@ -21,6 +21,7 @@
 
   @media (min-width: $desktop-width) {
     display: grid;
+    row-gap: 8px;
   }
 }
 
@@ -41,20 +42,20 @@
 
   @media (min-width: $desktop-width) {
     max-width: 436px;
-    margin: 0 0 69px 0;
+    margin: 0 0 61px 0;
   }
 }
 
 .slider__list {
   display: grid;
   grid-template-columns: 1fr 1fr;
-  gap: 34px 32px;
+  gap: 37px 32px;
   margin: 0 0 20px;
 
   @media (min-width: $tablet-width) {
     grid-template-columns: 162px 162px 1fr;
     gap: 42px;
-    margin: 0 0 100px;
+    margin: 0 0 103px;
   }
 
   @media (min-width: $desktop-width) {
@@ -163,6 +164,7 @@
     line-height: 20px;
     color: #000000;
     text-transform: uppercase;
+    padding: 0;
 
     @media (min-width: $tablet-width) {
       font-size: 20px;

@@ -2,8 +2,9 @@
 
 .comment-field {
   width: 100%;
-  padding: 12px;
+  padding: 14px;
   border: 1px solid #e7e7e7;
+  max-height: 150px;
 
   @media (min-width: $tablet-width) {
     font-size: 20px;

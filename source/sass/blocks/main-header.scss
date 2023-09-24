@@ -1,7 +1,7 @@
 @import "common/variables.scss";
 
 .main-header {
-  padding: 13px 0;
+  padding: 13px 0 10px 0;
 
   @media (min-width: $tablet-width) {
     padding: 25px 0 0 0;
@@ -19,7 +19,19 @@
   flex-wrap: wrap;
 
   @media (min-width: $tablet-width) {
+    justify-content: flex-start;
+    gap: 94px;
     align-items: center;
+  }
+
+  @media (min-width: $desktop-width) {
+    justify-content: space-between;
+  }
+
+  &--extended {
+    @media (min-width: $tablet-width) {
+      justify-content: space-between;
+    }
   }
 }
 
