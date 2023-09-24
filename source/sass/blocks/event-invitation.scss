@@ -54,6 +54,9 @@
   line-height: 20px;
 
   @media (min-width: $tablet-width) {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
     font-size: 16px;
     text-align: end;
   }

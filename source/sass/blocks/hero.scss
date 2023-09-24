@@ -54,12 +54,12 @@
     display: grid;
     grid-template-columns: repeat(2, auto);
     grid-template-rows: repeat(4, min-content);
-    padding: 65px 0 0 0;
+    padding: 61px 0 0 0;
   }
 
   @media (min-width: $desktop-width) {
     min-height: 694px;
-    padding: 110px 0 20px 80px;
+    padding: 108px 0 20px 80px;
   }
 }
 

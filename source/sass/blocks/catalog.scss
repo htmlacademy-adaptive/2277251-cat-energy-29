@@ -4,7 +4,7 @@
   margin-bottom: 25px;
 
   @media (min-width: $tablet-width) {
-    margin-bottom: 70px;
+    margin-bottom: 74px;
   }
 
   @media (min-width: $desktop-width) {
@@ -31,13 +31,23 @@
   &--additional {
     font-size: 24px;
     line-height: 24px;
-    padding: 0 0 31px 0;
+    padding: 0 0 38px 0;
     margin: 0;
 
     @media (min-width: $tablet-width) {
       padding: 0 0 36px 0;
       font-size: 36px;
       line-height: 36px;
+    }
+  }
+
+  &--main {
+    @media (min-width: $tablet-width) {
+      margin: 63px 0 80px;
+    }
+
+    @media (min-width: $desktop-width) {
+      margin: 70px 0 83px;
     }
   }
 }
@@ -106,15 +116,11 @@
       content: "";
       position: absolute;
       width: 100%;
-      height: calc(100% - 75px);
+      height: calc(100% - 83px);
       left: 0;
       bottom: 0;
       background-color: #f2f2f2;
       z-index: -1;
-
-      @media (min-width: $desktop-width) {
-        height: calc(100% - 87px);
-      }
     }
   }
 
@@ -181,7 +187,7 @@
 
   @media (min-width: $tablet-width) {
     gap: 40px;
-    margin-bottom: 40px;
+    margin-bottom: 41px;
   }
 
   @media (min-width: $desktop-width) {
@@ -202,6 +208,7 @@
 
 .catalog__additional-goods-list {
   margin-bottom: 35px;
+  border-bottom: 1px solid #cdcdcd;
 
   @media (min-width: $tablet-width) {
     border-right: 1px solid #cdcdcd;
@@ -220,10 +227,10 @@
 .catalog__additional-goods-item {
   align-items: center;
   border-top: 1px solid #cdcdcd;
-  padding: 13px 0 19px 0;
+  padding: 12px 0 18px 0;
 
   @media (min-width: $tablet-width) {
-    padding: 26px 38px 28px 38px;
+    padding: 25px 38px 28px 38px;
     display: grid;
     grid-template-columns: 1fr 1fr;
     row-gap: 12px;
@@ -246,13 +253,19 @@
     justify-content: initial;
     justify-self: end;
     margin: 0 0 5px 0;
+    padding-right: 2px;
   }
 
   @media (min-width: $desktop-width) {
+    padding-right: 0;
     min-width: 285px;
     justify-content: space-between;
     margin: 0;
     margin-left: auto;
+  }
+
+  &--extended {
+    gap: 20px;
   }
 }
 
@@ -362,8 +375,8 @@
       background-image: url("../img/sprite.svg#icon-plus-tablet");
       width: 60px;
       height: 60px;
-      top: 50px;
-      left: 132px;
+      top: 59px;
+      left: 130px;
     }
 
     @media (min-width: $desktop-width) {

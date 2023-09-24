@@ -32,34 +32,43 @@
   margin-bottom: 20px;
 
   @media (min-width: $tablet-width) {
-    margin-bottom: 45px;
+    margin-bottom: 40px;
   }
 
   @media (min-width: $desktop-width) {
+    margin-bottom: 36px;
     transform: translateY(-35px);
   }
 }
 
 .page__about {
-  margin-bottom: 50px;
+  margin-bottom: 47px;
   padding: 0 20px;
 
+  @media (min-width: $tablet-width) {
+    margin-bottom: 0;
+    border-bottom: 1px solid #e6e6e6;
+    padding: 0 20px 45px 20px;
+  }
+
   @media (min-width: $desktop-width) {
+    border-bottom: none;
     padding: 0 110px;
+    margin-bottom: 45px;
   }
 }
 
 .page__slider {
-  padding: 25px 0 40px 0;
+  padding: 25px 0 36px 0;
   background-color: #eaeaea;
 
   @media (min-width: $tablet-width) {
-    padding: 43px 0 100px 0;
+    padding: 45px 0 100px 0;
     background: linear-gradient(to top, #eaeaea, #eaeaea 462px, transparent 462px, transparent 100%);
   }
 
   @media (min-width: $desktop-width) {
-    padding: 25px 0 75px 0;
+    padding: 25px 0 67px 0;
     background: linear-gradient(to bottom, transparent, transparent 160px, #eaeaea 160px, #eaeaea 100%);
   }
 }

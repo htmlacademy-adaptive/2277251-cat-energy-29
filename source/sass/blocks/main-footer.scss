@@ -30,11 +30,11 @@
   align-items: center;
   justify-content: center;
   border-bottom: 1px solid #d9d9d9;
-  padding-bottom: 20px;
+  padding: 5px 0 16px 0;
 
   @media (min-width: $tablet-width) {
     justify-content: start;
-    padding-bottom: 0;
+    padding: 0;
     border-bottom: none;
   }
 }
@@ -55,5 +55,22 @@
 
   @media (min-width: $tablet-width) {
     border-bottom: none;
+    padding: 21px 0;
+  }
+
+  @media (min-width: $desktop-width) {
+    padding: 20px 0;
+  }
+}
+
+.main-footer__copyright {
+  @media (min-width: $tablet-width) {
+    display: flex;
+    flex-direction: column;
+    padding: 7px 0;
+  }
+
+  @media (min-width: $desktop-width) {
+    padding: 5px 0;
   }
 }

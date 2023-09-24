@@ -10,13 +10,13 @@
   max-width: 435px;
 
   @media (min-width: $tablet-width) {
-    margin: 65px 0 54px 0;
+    margin: 61px 0 54px 0;
     font-size: 60px;
     line-height: 60px;
   }
 
   @media (min-width: $desktop-width) {
-    margin: 65px 0 58px 0;
+    margin: 68px 0 58px 0;
   }
 }
 
@@ -30,14 +30,14 @@
   text-transform: uppercase;
 
   @media (min-width: $tablet-width) {
-    margin: 0 0 64px 0;
+    margin: 0 0 66px 0;
     max-width: 323px;
     font-size: 20px;
     line-height: 30px;
   }
 
   @media (min-width: $desktop-width) {
-    margin: 0 0 68px 0;
+    margin: 0 0 65px 0;
   }
 }
 
