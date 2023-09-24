@@ -349,7 +349,7 @@
     display: flex;
     flex-direction: column;
     justify-content: end;
-    min-height: 438px;
+    min-height: 428px;
     margin-top: auto;
     padding: 50px 20px 40px 20px;
     background-color: #ffffff;
@@ -358,6 +358,7 @@
 
   @media (min-width: $desktop-width) {
     padding: 50px 36px 40px 36px;
+    min-height: 431px;
   }
 
   &::before {
@@ -375,12 +376,12 @@
       background-image: url("../img/sprite.svg#icon-plus-tablet");
       width: 60px;
       height: 60px;
-      top: 59px;
+      top: 49px;
       left: 130px;
     }
 
     @media (min-width: $desktop-width) {
-      left: 93px;
+      left: 91px;
     }
   }
 }
